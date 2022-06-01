@@ -1,0 +1,73 @@
+<h1>Listado de personas</h1>
+<br>
+<form action="">
+    <label for="">Nombre: </label>
+    <input type="text" class="form-control"/>
+    <br>
+    <label for="">Apellido:</label> 
+    <input type="text" class="form-control"/>
+    <br>
+    <label for="">Teléfono:</label>
+    <input type="text" class="form-control">
+    <br/>
+    <div class="center-button">
+        <button class='btn btn-primary' 
+        [disabled]="deshabilitar"
+        (click)="agregarPersona()">Agregar Nueva persona</button>
+        <div>{{ mensaje }}</div>
+    </div>
+    <br/>
+</form>
+ <!--Interpolacion de variables-->
+<!--<div (keyup)="0">metodo para repetir cada vez que se manda a llamar una tecla-->
+<!--<input #entrada/>-->   
+<!--{{ entrada.value }}-->
+<!--</div>-->
+<hr>
+<div class=".container">
+    <div class="row">
+       <div class="col">
+         <h4>Codigo</h4>
+        </div>
+      <div class="col">
+        <h4>Nombre</h4>
+      </div>
+      <div class="col">
+        <h4>Apellido</h4>
+      </div>
+      <div class="col">
+        <h4>No. Telefono</h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            RG001 
+          </div>
+        <div class="col">
+          Luis 
+        </div>
+        <div class="col">
+          Rodriguez
+        </div>
+        <div class="col">
+          809-215-2525
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+            RG002 
+          </div>
+          <div class="col">
+            Luis 
+          </div>
+          <div class="col">
+            Rodriguez
+          </div>
+          <div class="col">
+            809-215-2525
+          </div>
+        </div>
+</div>
+<hr>
