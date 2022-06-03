@@ -1,11 +1,8 @@
-h1{
+.center-button{
     text-align: center;
     color: blue;
 }
 form{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.center-button{
+    width: 75rem;
     text-align: center;
 }

@@ -1,1 +1,83 @@
-<p>Bienvenido a la pantalla de registro</p>
+<section class="mat-card-margin">
+  <mat-grid-list cols="2">
+    <mat-grid-tile>
+        <h3>Sistema de Nomina</h3>
+        <img src="https://www.appdevelopmentpros.com/wp-content/uploads/2020/09/why_progressive_img.png" alt="nomina" height="70%">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <h1 class="center">Regístrate</h1>
+        <hr />
+        <p class="center">
+          ¿Ya tienes una cuenta?
+          <a class="center" href="">Iniciar sesion</a>
+        </p>
+        <form>
+          <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label"
+              >Correo Electrónico</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" class="form-label"
+              >Contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" class="form-label"
+              >Confirmar contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <a href="https://www.facebook.com/" class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Términos y condiciones</label
+            >
+          </a>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [routerLink]="['/index']">
+            Registrarse
+          </button>
+          <hr />
+          <a class="imgFace" href="https://www.facebook.com/">
+            <img
+              class="imgFace"
+              src="../../../assets/img/facebook-circle-logo-24.png"
+              alt="facebook"
+            />
+            <!--<img class = "imgFace" src="https://icones.pro/wp-content/uploads/2021/02/facebook-icones.png" alt="facebook"> -->
+          </a>
+          <a class="imgmail" href="https://www.gmail.com/">
+            <img
+              class="imgmail"
+              src="../../../assets/img/gmail-logo-24.png"
+              alt="gmail"
+            />
+          </a>
+        </form>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

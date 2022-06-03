@@ -1,3 +1,41 @@
-h1{
-    color: blue;
+.center{
+    text-align: center;
+    text-decoration: transparent;
+}
+.mat-card-margin{
+    padding: 15px;
+    background-color: #1a568a;
+    color: white;
+}
+mat-card{
+    color: #1a568a;
+    background-color: rgb(225, 227, 230);
+    padding: 5%;
+    width: 75%;
+    margin: 25px;
+}
+button{
+    color: rgb(253, 254, 255);
+    border-color: rgb(80, 142, 170);
+    background-color:rgb(36, 74, 124);
+    font-size: large;
+    display: flex;
+    margin: auto;
+}
+.imgFace{
+    width:27px;
+    color:rgb(26, 86, 138);
+    text-decoration-color: transparent;
+    position: absolute;
+    left: 45%;
+    transform: translate( -45%);
+}
+
+.imgmail{
+    width:25px;
+    color:rgb(26, 86, 138);
+    text-decoration-color: transparent;
+    position:relative;
+    left: 25%;
+    transform: translate( 50%);
 }
