@@ -1,28 +1,16 @@
 <body style="display: inline-flex;">
     <nav class="nav">
         <ul class="list">
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../../../assets/img/home.svg" width="20px" class="list__img">
-                    <a href="#" class="nav__link" [routerLink]="['/Inicio']">Inicio</a>
-                </div>
-            </li>
 
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <img src="../../../assets/img/addperson.svg" width="20px" class="list__img">
-                    <span href="#" class="nav__link">Empleados</span>
+                    <span src href="#" class="nav__link">Personas</span>
                     <img src="../../../assets/img/arrow.svg" width="20px" class="list__arrow">
                 </div>
                 <ul class="list__show">
                     <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" [routerLink]="['/Inicio']">Registrar</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Empleados</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Empleados Inactivos</a>
+                        <a href="#" class="nav__link nav__link--inside padding" routerLink="/personas">Empleados</a>
                     </li>
                 </ul>
             </li>
@@ -30,36 +18,15 @@
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <img src="../../../assets/img/nomina.svg" width="20px" class="list__img">
-                    <span href="#" class="nav__link">Nómina</span>
-                    <img src="../../../assets/img/arrow.svg" width="20px" class="list__arrow">
+                    <span href="#" class="nav__link" routerLink="nomina">Nómina</span>
                 </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Nómina regular</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Cálcular prestaciones</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Regalía Pascual</a>
-                    </li>
-                </ul>
             </li>
 
             <li class="list__item list__item--click">
                 <div class="list__button list__button--click">
                     <img src="../../../assets/img/report.svg" width="20px" class="list__img">
                     <span href="#" class="nav__link">Reportes</span>
-                    <img src="../../../assets/img/arrow.svg" width="20px" class="list__arrow">
                 </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Nómina General</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Saldos Pendientes</a>
-                    </li>
-                </ul>
             </li>
 
             <li class="list__item">
@@ -83,7 +50,13 @@
                         <a href="#" class="nav__link nav__link--inside padding">Perfil</a>
                     </li>
                     <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding">Maestros</a>
+                        <a href="#" class="nav__link nav__link--inside padding">Bancos</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside padding">Empresa</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside padding">Departamentos</a>
                     </li>
                 </ul>
             </li>
@@ -98,5 +71,4 @@
     </nav>
 </body>
 <div style="display: inline-flex;" >
-    
 </div>

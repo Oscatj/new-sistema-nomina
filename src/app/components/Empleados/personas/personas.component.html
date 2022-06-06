@@ -1,0 +1,328 @@
+<br>
+<h3 class="center-title">Registro de empleados</h3>
+<br>
+<mat-tab-group class="margen">
+  <mat-tab label="Datos Personales">
+    <br>
+    <form class="row g-3 mt-3card ">
+        <div class="col-6">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Ej: Oscarina" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-6">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: Tejada" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+       </div>
+       <div class="col-6">
+        <label for="validationCustom02" class="form-label">Apodo</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: La rubia" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+     </div>
+        <div class="col-6">
+          <label for="validationCustom01" class="form-label">Identificación</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: 001-01945426-4" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Sexo</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Femenino</option>
+            <option>Masculino</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Estado Civil</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Soltero</option>
+            <option>Casado</option>
+            <option>Divorciado</option>
+            <option>Viudo</option>
+            <option>Unión libre</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-2">
+          <label for="validationCustom05" class="form-label">Fecha de nacimiento</label>
+          <input type="date" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <hr>
+        <div class="col-12 position-button">
+          <button class="btn btn-primary" type="submit">Siguiente</button>
+        </div>
+        <br>
+      </form>
+  </mat-tab>
+
+  <mat-tab label="Datos de contacto"> 
+  <br>
+  <form class="row g-3 mt-3card"> 
+    <h5>Direccion:</h5>
+  <div class="col-3">
+    <label for="validationCustom03" class="form-label">Calle y número</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-3">
+    <label for="validationCustom03" class="form-label">Municipio / Sector</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-3">
+    <label for="validationCustom03" class="form-label">Provincia</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-3">
+    <label for="validationCustom03" class="form-label">Referencia</label>
+    <textarea class="form-control" rows="2"></textarea>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <hr>
+  <h5>Telefono:</h5>
+  <div class="col-3">
+    <label for="validation" class="form-label">No. Telefono</label>
+    <input type="number" name="tel" id="tel" class="form-control">
+  </div>
+  <div class="col-2">
+    <label for="validation" class="form-label">Tipo tel.</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Personal</option>
+      <option>Residencial</option>
+      <option>Laboral</option>
+    </select>
+  </div>
+  <div class="col-2">
+    <label for="validation" class="form-label">Estado tel.</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Activo</option>
+      <option>Inactivo</option>
+    </select>
+  </div>
+  <hr>
+  <h5>Redes sociales:</h5>
+  <div class="col-3">
+    <label for="validation" class="form-label">Usuario</label>
+    <input type="text" name="tel" id="tel" class="form-control">
+  </div>
+  <div class="col-2">
+    <label for="validation" class="form-label">Tipo de red</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Facebook</option>
+      <option>Instagram</option>
+      <option>Twiter</option>
+    </select>
+  </div>
+  <div class="col-2">
+    <label for="validation" class="form-label">Estado tel.</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Activo</option>
+      <option>Inactivo</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">Empleado?</label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="col-12 position-button">
+    <button class="btn btn-primary" type="submit">Siguiente</button>
+  </div>
+  </form>
+  </mat-tab>
+  <mat-tab label="Datos Laborales">
+    <br>
+    <form class="row g-3 mt-3card ">
+    <div class="col-3">
+      <label for="validationCustom01" class="form-label">Fecha de ingreso</label>
+      <input type="date" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <!--
+    <div class="col-3">
+      <label for="validationCustom02" class="form-label">Relación comercial</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Empleado</option>
+        <option>Dependiente</option>
+      </select>
+        <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>-->
+    <!--Si la opcion seleccionada es empleado:-->
+    <div class="col-3">
+      <label for="validationCustom03" class="form-label">Departamento</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>Alta Gerencia</option>
+        <option>Cobro</option>
+        <option>Servicios</option>
+        <option>Contabilidad</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <label for="validationCustom03" class="form-label">Cargo</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>Gerente</option>
+        <option>Gestor de cobro</option>
+        <option>Mensajero</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <label for="validationCustom03" class="form-label">Horario</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elija una opcion</option>
+          <!--T-TR es Tanda Turno regular y T-TI es tanda turno irregular-->
+          <option>T-TR 1</option>
+          <option>T-TR 2</option>
+          <option>T-TR 3</option>
+          <option>T-TI 1</option>
+          <option>T-TI 2</option>
+          <option>T-TI 3</option>
+
+        </select>
+     </div>
+    <hr>
+    <h5>Cuenta de banco:</h5>
+    <div class="col-3">
+    <label for="validationCustom03" class="form-label">Nombre Cta. Banco</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>BHD</option>
+        <option>BSC</option>
+        <option>BPD</option>
+        <option>BRD</option>
+      </select>
+    </div>
+    <div class="col-4">
+      <label for="validation" class="form-label">No. Cta. Banco</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+    </div>
+    <div class="col-3">
+      <label for="validationCustom03" class="form-label">Tipo de cta</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elija una opcion</option>
+          <option>Ahorro</option>
+          <option>Corriente</option>
+        </select>
+    </div>
+    <hr>
+    <div class="col-12 position-button">
+      <button class="btn btn-primary" type="submit">Terminar</button>
+    </div>
+  </form>
+  </mat-tab>
+</mat-tab-group>
+
+
+ <!--Interpolacion de variables-->
+<!--<div (keyup)="0">metodo para repetir cada vez que se manda a llamar una tecla-->
+<!--<input #entrada/>-->   
+<!--{{ entrada.value }}-->
+<!--</div>-->
+<br>
+<h3 class="center-button">Listado de empleados</h3>
+<hr>
+<div class=".container-sm">
+    <div class="row">
+       <div class="col">
+         <h5>Codigo</h5>
+        </div>
+      <div class="col">
+        <h5>Nombre</h5>
+      </div>
+      <div class="col">
+        <h5>Apellido</h5>
+      </div>
+      <div class="col">
+        <h5>No. Telefono</h5>
+      </div>
+      <div class="col">
+        <h5>Direccion</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            RG001 
+          </div>
+        <div class="col">
+          Luis 
+        </div>
+        <div class="col">
+          Rodriguez
+        </div>
+        <div class="col">
+          809-215-2525
+        </div>
+        <div class="col">
+            C/ Mama Tingo, #16, Zona Industrial de Herrera
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+            RG002 
+          </div>
+          <div class="col">
+            Luis 
+          </div>
+          <div class="col">
+            Rodriguez
+          </div>
+          <div class="col">
+            809-215-2525
+          </div>
+          <div class="col">
+            C/ Mama Tingo, #16, Zona Industrial de Herrera
+          </div>
+        </div>
+</div>
+<hr>
