@@ -20,6 +20,10 @@ import { IndexComponent } from './components/index/index.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { NominaComponent } from './components/Nomina/nomina/nomina.component';
+import { ListaPersonasComponent } from './components/Empleados/lista-personas/lista-personas.component';
+import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
+import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
+import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
 
 
 @NgModule({
@@ -32,6 +36,10 @@ import { NominaComponent } from './components/Nomina/nomina/nomina.component';
     FooterComponent,
     PanelComponent,
     NominaComponent,
+    ListaPersonasComponent,
+    DatosPersonalesComponent,
+    DatosContactoComponent,
+    DatosLaboralesComponent,
   ],
   imports: [
     BrowserModule,

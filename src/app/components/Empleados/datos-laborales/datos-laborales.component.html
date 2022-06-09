@@ -1,0 +1,66 @@
+<form class="row g-3 mt-3card">
+  <div class="col-3 margen">
+    <label for="validationCustom01" class="form-label">Fecha de ingreso</label>
+    <input type="date" class="form-control" id="validationCustom05" required />
+    <div class="invalid-feedback">Please provide a valid zip.</div>
+  </div>
+  <div class="col-3 margen">
+    <label for="validationCustom03" class="form-label">Departamento</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Alta Gerencia</option>
+      <option>Cobro</option>
+      <option>Servicios</option>
+      <option>Contabilidad</option>
+    </select>
+  </div>
+  <div class="col-3 margen">
+    <label for="validationCustom03" class="form-label">Cargo</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Gerente</option>
+      <option>Gestor de cobro</option>
+      <option>Mensajero</option>
+    </select>
+  </div>
+  <div class="col-3 margen">
+    <label for="validationCustom03" class="form-label">Horario</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <!--T-TR es Tanda Turno regular y T-TI es tanda turno irregular-->
+      <option>T-TR 1</option>
+      <option>T-TR 2</option>
+      <option>T-TR 3</option>
+      <option>T-TI 1</option>
+      <option>T-TI 2</option>
+      <option>T-TI 3</option>
+    </select>
+  </div>
+  <h1 class="sub-title">Cuenta de banco:</h1>
+  <div class="col-3 margen">
+    <label for="validationCustom03" class="form-label">Nombre Cta. Banco</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>BHD</option>
+      <option>BSC</option>
+      <option>BPD</option>
+      <option>BRD</option>
+    </select>
+  </div>
+  <div class="col-4 margen">
+    <label for="validation" class="form-label">No. Cta. Banco</label>
+    <input type="text" class="form-control" id="validationCustom05" required />
+  </div>
+  <div class="col-3 margen">
+    <label for="validationCustom03" class="form-label">Tipo de cta</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elija una opcion</option>
+      <option>Ahorro</option>
+      <option>Corriente</option>
+    </select>
+  </div>
+  <div class="col-12 position-button">
+    <button class="btn btn-secondary" type="submit">Volver</button>
+    <button class="btn btn-primary" type="submit">Terminar</button>
+  </div>
+</form>

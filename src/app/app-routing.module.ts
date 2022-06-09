@@ -4,12 +4,14 @@ import { IndexComponent } from './components/index/index.component';
 import { PersonasComponent } from './components/Empleados/personas/personas.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { NominaComponent } from './components/Nomina/nomina/nomina.component';
+import { ListaPersonasComponent } from './components/Empleados/lista-personas/lista-personas.component';
 
 const routes: Routes = [
   {path:'registro',component: RegistroComponent},
   {path:'index',component: IndexComponent},
   {path: 'personas', component: PersonasComponent},
   {path: 'nomina', component: NominaComponent},
+  {path: 'listaPersonas', component: ListaPersonasComponent},
   {path:'**',pathMatch:'full',redirectTo:'index'}, 
 ];
 

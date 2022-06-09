@@ -4,12 +4,22 @@
             <a>ContSN</a>
         </span>
         
-        <button mat-button [routerLink]="['/index']">Inicio</button>
-        <button mat-button [routerLink]="['/nosotros']">Nosotros</button>
-        <button mat-button [routerLink]="['contactos']">Contactos</button>
-        <button mat-button [routerLink]="['/precios']">Precios</button>
-        <button mat-button [routerLink]="['registro']">Registrarse</button>
-
+        <div class="input-group mb-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="¿Qué estás buscando?"
+              aria-label="name"
+              aria-describedby="basic-addon1"
+            />
+            <button
+              class="material-symbols-outlined input-group-text btn btn-primary"
+            >
+              search
+            </button>
+          </div>
+          <i class="fas fa-bell"></i>
+<!--
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
             <span  class = "icono" class="material-icons">notifications</span>
         </button> 
@@ -17,8 +27,12 @@
         <button class = "icono" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
             <span class="material-icons">person</span>
         </button> 
-    
-        <button class="icono" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <span class="material-icons"> menu</span>
-        </button> 
+-->
+        <div class="user">
+            <img
+              src="https://ajisenramenpanama.com/wp-content/uploads/2020/07/user_icon.png" width="25px"
+              alt=""
+            />
+            <label for="">Oscarina Tejada</label>
+          </div>
  </mat-toolbar>
