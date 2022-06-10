@@ -1,0 +1,102 @@
+<div class="card">
+  <div>
+    <h1 class="titles title">NUEVO HORARIO</h1> 
+  </div>
+<form class="row">
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Tanda 1</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>L-S: 8:00 a 12:00</option>
+        <option>L-S: 7:30 a 12:00</option>
+        <option>L-V: 8:00 a 12:00</option>
+        <option>L-V: 8:00 a 1:00</option>
+        <option>L-S: 9:00 a 1:00</option>
+      </select>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Tanda 2</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>L-V: 1:00 a 5:00</option>
+        <option>L-V: 1:00 a 4:30</option>
+        <option>L-V: 1:00 a 6:00</option>
+        <option>L-V: 2:00 a 6:00</option>
+      </select>
+    </div>
+    <div class="col-4 margen">
+      <button class="btn btn-success" routerLink="/tanda">CREAR TANDA</button>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Nombre turno</label>
+      <input rows="3" class="form-control" placeholder="Ej. Turno Regular 1"/>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Descripcion</label>
+      <textarea rows="2" class="form-control" placeholder="Ej. Empleados fijos"></textarea>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Estado</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>Activo</option>
+        <option>Inactivo</option>
+      </select>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Asignable</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>Todos</option>
+        <option>Empleados internos</option>
+      </select>
+    </div>
+    <div class="col-12 position-button">
+      <button class="btn btn-primary" type="submit">Guardar</button>
+    </div>
+  </form>
+</div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-18">
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Asignable</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>Turno Regular 1</td>
+                <td>Empleados fijos</td>
+                <td>Activo</td>
+                <td>Todos</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>Turno Regular 2</td>
+                <td>Empleados fijos</td>
+                <td>Inactivo</td>
+                <td>Empleados Internos</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -2,7 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+}
+.logo{
+    position: relative;
+    height: 100%;
+    margin-right:  1000px;
+}
+.logo a {
+    position: absolute;
+    left: 25px;
+    margin-top: -2px;
 }
 /*
 .topba{
@@ -17,15 +26,12 @@
     z-index: 1;
 }
 */
-.font-title{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .user{
     margin-top: 5px;
     position: relative;
     width: 50px;
     height: 50px;
-    margin-left: 510px;
+    margin-left: 30px;
 }
 .user img{
     position: absolute;
@@ -33,20 +39,13 @@
     left: 0;
     object-fit: cover;
 }
-.input-group{
-    position: relative;
-    width: 30%;
-    margin-left: 100px;
-}
+
 .mat-toolbar {
     padding: 2%;
     color: aliceblue;
     background-color: #0f354e;
 }
-a{
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-}
+
 .mat-button{
     position: relative;
     left: 5%;

@@ -24,6 +24,14 @@ import { ListaPersonasComponent } from './components/Empleados/lista-personas/li
 import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
 import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
 import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
+import { BancosComponent } from './components/maestros/bancos/bancos.component';
+import { HorariosComponent } from './components/maestros/horarios/horarios.component';
+import { EmpresasComponent } from './components/maestros/empresas/empresas.component';
+import { UsuariosComponent } from './components/maestros/usuarios/usuarios.component';
+import { DepartamentosComponent } from './components/maestros/departamentos/departamentos.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { TandaComponent } from './components/maestros/tanda/tanda.component';
+import { CargosComponent } from './components/maestros/cargos/cargos.component';
 
 
 @NgModule({
@@ -40,6 +48,14 @@ import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/
     DatosPersonalesComponent,
     DatosContactoComponent,
     DatosLaboralesComponent,
+    BancosComponent,
+    HorariosComponent,
+    EmpresasComponent,
+    UsuariosComponent,
+    DepartamentosComponent,
+    PerfilComponent,
+    TandaComponent,
+    CargosComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,75 @@
+<div class="card">    
+    <div>
+      <h1 class="titles title">CREAR DEPARTAMENTO</h1>
+    </div>
+    <form class="row">
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Ej. Sistemas"
+        />
+      </div>
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Descripcion</label>
+        <textarea
+          type="text"
+          class="form-control"
+          placeholder="Ej. Mantenimiento de software"
+        ></textarea>
+      </div>
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Estado</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elija una opcion</option>
+          <option>Activo</option>
+          <option>Inactivo</option>
+        </select>
+      </div>
+      <div class="col-12 position-button">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </div>
+    </form>
+</div>
+<div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-18">
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Estado</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>Sistemas</td>
+                <td>Mantenimiento de software</td>
+                <td>Activo</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">2</td>
+                <td>Contabilidad</td>
+                <td>Manejo del sistema de nomina</td>
+                <td>Inactivo</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,91 @@
+<div class="card">
+    <div>
+      <h1 class="titles title">CREAR CARGO</h1>
+    </div>
+    <form class="row">
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Nombre</label>
+        <input type="text" class="form-control" placeholder="Ej. Enc. Almacen" />
+      </div>
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Desripcion</label>
+        <textarea
+          type="text"
+          rows="3"
+          class="form-control"
+          placeholder="Ej. Se encarga de mantener el almacen en buen estado"
+        ></textarea>
+      </div>
+      <div class="col-2 margen">
+        <label for="validationCustom03" class="form-label">Sueldo base</label>
+        <input type="text" class="form-control" placeholder="0.00" />
+      </div>
+      <div class="col-3 margen">
+        <label for="validationCustom03" class="form-label">Comentario</label>
+        <textarea
+          type="text"
+          rows="3"
+          class="form-control"
+          placeholder="Ej. Se creo con el proposito de..."
+        ></textarea>
+      </div>
+      <div class="col-12 margen">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck">Aplica comision?</label>
+        </div>
+      </div>
+      <div class="col-12 position-button">
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-18">
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Sueldo</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>Desarrollador</td>
+                <td>Mantenimiento del sistema de cobro</td>
+                <td>RD$50,000.00</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">2</td>
+                <td>Contador</td>
+                <td>Manejo del sistema de nomina</td>
+                <td>RD$35,000.00</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

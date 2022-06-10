@@ -1,0 +1,111 @@
+<div class="card">
+  <div>
+    <h1 class="titles title">CREAR BANCO</h1>
+  </div>
+  <form class="row">
+    <div class="col-2 margen">
+      <label for="validationCustom03" class="form-label">Abreviatura</label>
+      <input type="text" class="form-control" placeholder="Ej. BHD" />
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Nombre banco</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ej. Banco Popular Dominicano"
+      />
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Estado</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elija una opcion</option>
+        <option>Activo</option>
+        <option>Inactivo</option>
+      </select>
+    </div>
+    <h2 class="sub-title">Direccion:</h2>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Calle y número</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationCustom03"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label"
+        >Municipio / Sector</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="validationCustom03"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Provincia</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationCustom03"
+        required
+      />
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+    <div class="col-3 margen">
+      <label for="validationCustom03" class="form-label">Referencia</label>
+      <textarea class="form-control" rows="2"></textarea>
+      <div class="invalid-feedback">Please provide a valid city.</div>
+    </div>
+
+    <div class="col-12 position-button">
+      <button class="btn btn-primary" type="submit">Guardar</button>
+    </div>
+  </form>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-lg-18">
+      <div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Codigo</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Estado</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Turno Regular 1</td>
+              <td>Empleados fijos</td>
+              <td>Activo</td>
+              <td>
+                <i class="material-symbols-outlined text-primary">edit</i>
+                <i class="material-symbols-outlined text-danger">delete</i>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">1</td>
+              <td>Turno Regular 2</td>
+              <td>Empleados fijos</td>
+              <td>Inactivo</td>
+              <td>
+                <i class="material-symbols-outlined text-primary">edit</i>
+                <i class="material-symbols-outlined text-danger">delete</i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
