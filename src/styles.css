@@ -9,6 +9,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-align: center;
     font-family: sans-serif;
 }
+.titles2 {
+    color: #134c72;
+    font-size: 25px;
+    padding: 10px;
+    text-align: justify;
+    font-family: sans-serif;
+}
 .sub-title {
     color: #134c72;
     font-size: 18px;

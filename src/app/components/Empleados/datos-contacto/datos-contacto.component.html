@@ -1,85 +1,204 @@
-<form class="row mt-3card" id="contactoForm">
-  <h2 class="sub-title">Direccion:</h2>
-  <div class="col-3 margen">
-    <label for="validationCustom03" class="form-label">Calle y número</label>
-    <input type="text" class="form-control" id="validationCustom03" required />
-    <div class="invalid-feedback">Please provide a valid city.</div>
-  </div>
-  <div class="col-3 margen">
-    <label for="validationCustom03" class="form-label"
-      >Municipio / Sector</label
-    >
-    <input type="text" class="form-control" id="validationCustom03" required />
-    <div class="invalid-feedback">Please provide a valid city.</div>
-  </div>
-  <div class="col-3 margen">
-    <label for="validationCustom03" class="form-label">Provincia</label>
-    <input type="text" class="form-control" id="validationCustom03" required />
-    <div class="invalid-feedback">Please provide a valid city.</div>
-  </div>
-  <div class="col-3 margen">
-    <label for="validationCustom03" class="form-label">Referencia</label>
-    <textarea class="form-control" rows="2"></textarea>
-    <div class="invalid-feedback">Please provide a valid city.</div>
-  </div>
-  <h2 class="sub-title">Telefono:</h2>
-  <div class="col-3">
-    <label for="validation" class="form-label">No. Telefono</label>
-    <input type="number" name="tel" id="tel" class="form-control" />
-  </div>
-  <div class="col-3">
-    <label for="validation" class="form-label">Tipo tel.</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Elija una opcion</option>
-      <option>Personal</option>
-      <option>Residencial</option>
-      <option>Laboral</option>
-    </select>
-  </div>
-  <div class="col-3">
-    <label for="validation" class="form-label">Estado tel.</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Elija una opcion</option>
-      <option>Activo</option>
-      <option>Inactivo</option>
-    </select>
-  </div>
-  <h2 class="sub-title margen">Redes sociales:</h2>
-  <div class="col-4">
-    <label for="validation" class="form-label">Usuario</label>
-    <input type="text" name="tel" id="tel" class="form-control" />
-  </div>
-  <div class="col-3">
-    <label for="validation" class="form-label">Tipo de red</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Elija una opcion</option>
-      <option>Facebook</option>
-      <option>Instagram</option>
-      <option>Twiter</option>
-    </select>
-  </div>
-  <div class="col-3">
-    <label for="validation" class="form-label">Estado tel.</label>
-    <select class="form-select" id="validationCustom04" required>
-      <option selected disabled value="">Elija una opcion</option>
-      <option>Activo</option>
-      <option>Inactivo</option>
-    </select>
-  </div>
-  <div class="col-12 margen">
-    <div class="form-check">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="invalidCheck"
-        required
-      />
-      <label class="form-check-label" for="invalidCheck">Empleado?</label>
+<div class="card margin__div">
+  <form class="row" [formGroup]="formDatosContacto">
+    <h2 class="titles2">Datos de contacto</h2>
+    <hr>
+    <h2 class="sub-title margen">Email:</h2>
+    <div class="col-md-4">
+      <label class="form-label" for="emailP">Email Personal</label>
+        <input
+          type="email"
+          id="emailP"
+          class="form-control"
+          placeholder="ejemplo@gmail.com.do"
+          aria-describedby="inputGroupPrepend"
+          formControlName="emailP"
+        />
+        <div class="text-danger"
+          *ngIf= "formDatosContacto.get('emailP')?.hasError('required') && formDatosContacto.get('emailP')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
     </div>
-  </div>
-  <div class="col-12 position-button">
-    <button class="btn btn-secondary" type="submit">Volver</button>
-    <button class="btn btn-primary" type="submit">Siguiente</button>
-  </div>
-</form>
+    
+    <div class="col-md-4">
+      <label class="form-label" for="emailE">Email empresarial</label>
+        <input
+          type="email"
+          id="emailE"
+          class="form-control"
+          placeholder="ejemplo@empresa.com.do"
+          aria-describedby="inputGroupPrepend"
+          formControlName="emailE"
+        />
+        <div class="text-danger"
+          *ngIf= "formDatosContacto.get('emailE')?.hasError('required') && formDatosContacto.get('emailE')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <h2 class="sub-title margen">Direccion:</h2>
+    <div class="col-3">
+      <label class="form-label" for="calleNo">Calle y número</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="calleNo"
+        placeholder="Calle A, no. 12"
+        formControlName="calleNo"
+      />
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('calleNo')?.hasError('required') && formDatosContacto.get('calleNo')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="municipio">Municipio / Sector</label>
+      <input
+       type="text"
+       id="municipio" 
+       class="form-control"
+       placeholder="Herrera" 
+       formControlName="municipio"
+      />
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('municipio')?.hasError('required') && formDatosContacto.get('municipio')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="provincia">Provincia</label>
+      <input 
+       type="text" 
+       id="provincia" 
+       class="form-control"
+       placeholder="Santo Domingo Oeste"
+       formControlName="provincia" 
+      />
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('provincia')?.hasError('required') && formDatosContacto.get('provincia')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="referencia" >Referencia</label>
+      <textarea
+       class="form-control" 
+       id="referencia" 
+       rows="2"
+       formControlName="referencia">
+      </textarea>
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('referencia')?.hasError('required') && formDatosContacto.get('referencia')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <h2 class="sub-title">Telefono:</h2>
+    <div class="col-3"> <!--Poner mascara para limitar la cantidad de digitos y dividir con (-)-->
+      <label class="form-label" for="noTel" >No. Telefono</label>
+      <input
+       type="tel" 
+       name="noTel" 
+       id="noTel" 
+       class="form-control" 
+       placeholder="809-000-0000"
+       formControlName="noTel"
+      />
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('noTel')?.hasError('required') && formDatosContacto.get('noTel')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="tipoTel" >Tipo tel.</label>
+      <select
+       class="form-select" 
+       id="tipoTel"
+       formControlName="tipoTel"
+       >
+      <option *ngFor="let t of tiposTel" [ngValue]="t">{{ t }}</option>
+      </select>
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('tipoTel')?.hasError('required') && formDatosContacto.get('tipoTel')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="estadoTel">Estado tel.</label>
+      <select
+       class="form-select" 
+       id="estadoTel"
+       formControlName="estadoTel"
+       >
+       <option *ngFor="let e of estadosTel" [ngValue]="e">{{ e }}</option>
+      </select>
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('estadoTel')?.hasError('required') && formDatosContacto.get('estadoTel')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <h2 class="sub-title margen">Redes sociales:</h2>
+    <div class="col-4">
+      <label class="form-label" for="usuarioRed">Usuario</label>
+      <input 
+       type="text" 
+       name="tel" 
+       id="usuarioRed" 
+       class="form-control"
+       placeholder="ejemplo23" 
+       formControlName="usuarioRed"
+      />
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('usuarioRed')?.hasError('required') && formDatosContacto.get('usuarioRed')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="tipoRed">Tipo de red</label>
+      <select
+       class="form-select" 
+       id="tipoRed"
+       formControlName="tipoRed">
+       <option *ngFor="let t of tiposRed" [ngValue]="t">{{ t }}</option>
+      </select>
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('tipoRed')?.hasError('required') && formDatosContacto.get('tipoRed')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="estadoRed">Estado Red</label>
+      <select
+       class="form-select" 
+       id="estadoRed"
+       formControlName="estadoRed">
+       <option *ngFor="let e of estadosRed" [ngValue]="e">{{ e }}</option>
+      </select>
+      <div class="text-danger"
+          *ngIf= "formDatosContacto.get('estadoRed')?.hasError('required') && formDatosContacto.get('estadoRed')?.touched">
+          <span >Este campo es <strong>requerido</strong></span>
+        </div>
+    </div>
+    <!--
+    <div class="col-12 margen">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" />
+        <label class="form-check-label" for="invalidCheck">Empleado?</label>
+      </div>
+    </div>
+    -->
+    <div class="col-12 margen">
+      <button
+        class="btn btn-secondary float-start"
+        routerLink="/app-datos-personales"
+      >
+        VOLVER
+      </button>
+      <button
+        class="btn btn-primary float-end"
+        type="button"
+        (click)="agregarContacto()"
+        [disabled]="formDatosContacto.invalid"
+      >
+        GUARDAR
+      </button>
+    </div>
+  </form>
+</div>

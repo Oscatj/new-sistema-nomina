@@ -1,20 +1,14 @@
-.position-button{
-    text-align: end;
-    color: rgb(27, 27, 95);
-    height: 100%;
-    margin: 0;
+.margin__div {
+    margin: 25px;
 }
 .margen{
     margin: 10px 0;
 }
-.position-button .btn-secondary{
-    margin-right: 790px;  
-}
-.btn{
-    font-size:small;
-    margin-top: 20px; 
-}
 form{
     width: 100%;
     padding: 10px;
+}
+.text-danger{
+    margin-left: 7px;
+    text-align: start;
 }

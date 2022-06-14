@@ -13,6 +13,9 @@ import { DepartamentosComponent } from './components/maestros/departamentos/depa
 import { EmpresasComponent } from './components/maestros/empresas/empresas.component';
 import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
+import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
+import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
+import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
 
 const routes: Routes = [
   {path:'registro',component: RegistroComponent},
@@ -28,11 +31,14 @@ const routes: Routes = [
   {path: 'empresas', component: EmpresasComponent},
   {path: 'tanda', component: TandaComponent},
   {path: 'cargo', component: CargosComponent},
+  {path: 'app-datos-personales', component: DatosPersonalesComponent},
+  {path: 'app-datos-contacto', component: DatosContactoComponent},
+  {path: 'app-datos-laborales', component: DatosLaboralesComponent},
   {path:'**',pathMatch:'full',redirectTo:'index'}, 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{useHash:true})],
+  imports: [RouterModule.forRoot(routes, {useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

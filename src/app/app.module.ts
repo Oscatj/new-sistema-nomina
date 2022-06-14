@@ -1,5 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ToastrModule } from 'ngx-toastr';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -32,6 +33,7 @@ import { DepartamentosComponent } from './components/maestros/departamentos/depa
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -68,6 +70,8 @@ import { CargosComponent } from './components/maestros/cargos/cargos.component';
     MatGridListModule,
     MatListModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
     
     BrowserAnimationsModule
   ],
