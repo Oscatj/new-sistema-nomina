@@ -1,0 +1,149 @@
+<div class="card">
+    <div>
+      <h1 class="titles title">NOMINA REGULAR</h1>
+    </div>
+    <!--Hacer un buscador con un boton para buscar empleados y autollenar los campos-->
+    
+    <form class="row">
+        <div class="col-4 margen">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form-control"
+            formControlName="nombre"
+            placeholder="Ej: Oscarina"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="apellido">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellido"
+            formControlName="apellido"
+            placeholder="Ej: Tejada"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="noIdentidad">Identificación</label>
+          <input
+            type="number"
+            class="form-control"
+            id="noIdentidad"
+            formControlName="noIdentidad"
+            placeholder="Ej: 001-01945426-4"
+          />
+        </div>
+        <div class="col-2 margen">
+            <label
+             class="form-label" for="cargo">Cargo</label>
+            <select
+             class="form-select"
+             id="cargo"
+             formControlName="cargo">
+              <option *ngFor="let c of cargos" [ngValue]="c"> {{c}}</option>
+            </select>
+          </div>
+        <div class="col-2 margen">
+            <label class="form-label" for="departamento">Departamento</label>
+            <select
+             class="form-select"
+             id="departamento"
+             formControlName="departamento">
+              <option *ngFor="let d of departamentos" [ngValue]="d">{{d}}</option>
+            </select>
+          </div>
+          <div class="col-2 margen">
+            <label class="form-label" for="nombre">Sueldo bruto</label>
+            <input
+              type="number"
+              id="nombre"
+              class="form-control"
+              formControlName="nombre"
+              placeholder="0.00"
+            />
+          </div>
+          <div class="col-2 margen">
+            <label class="form-label" for="nombre">AFP</label>
+            <input
+              type="number"
+              id="nombre"
+              class="form-control"
+              formControlName="nombre"
+              placeholder="0.00"
+            /> 
+          </div>
+          <div class="col-2 margen">
+            <label class="form-label" for="nombre">SFS</label>
+            <input
+              type="number"
+              id="nombre"
+              class="form-control"
+              formControlName="nombre"
+              placeholder="0.00"
+            />
+          </div>
+          <div class="col-2 margen">
+            <label class="form-label" for="nombre">ISR</label>
+            <input
+              type="number"
+              id="nombre"
+              class="form-control"
+              formControlName="nombre"
+              placeholder="0.00"
+            />
+          </div>
+        <div class="col-12">
+          <button
+            class="btn btn-primary float-end"
+            type="button"
+          >
+            GUARDAR
+          </button>
+        </div>
+      </form>    
+  </div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-lg-18">
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Estado</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>Turno Regular 1</td>
+                <td>Empleados fijos</td>
+                <td>Activo</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>Turno Regular 2</td>
+                <td>Empleados fijos</td>
+                <td>Inactivo</td>
+                <td>
+                  <i class="material-symbols-outlined text-primary">edit</i>
+                  <i class="material-symbols-outlined text-danger">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

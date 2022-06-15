@@ -1,9 +1,75 @@
-.principal {
-    margin: 10px;
+.main{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    min-height: calc(100% -60px);
 }
-.title{
-    text-align:justify;
+.cards{
+    width: 100%;
+    padding: 35px 50px;
+    margin: 25px 0;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
-.input-group{
+.cards .card{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(114, 49, 49);
+    border-radius: 5px;
+    box-shadow: 0 7px 25px 0 rgba(38, 36, 41, 0.518);
+}
+
+.cards .regular {
+    background-color: orange;
+    text-align: center;
+}
+.cards .regular:hover{
+    background-color: rgba(255, 166, 0, 0.667);
+}
+.cards .extraordinaria {
+    background-color: green;
+}
+.cards .extraordinaria:hover {
+    background-color: rgba(0, 128, 0, 0.6);
+}
+.cards .liquidacion {
+    background-color: red;
+}
+.cards .liquidacion:hover{
+    background-color: rgba(255, 0, 0, 0.619);
+}
+.number {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+.card-name{
+    color: rgb(232, 220, 220);
+    font-weight: 600;
+    text-align: center;
+}
+
+.icon-box i{
+    color: rgb(21, 88, 146);
+    font-size: 55px;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+.chart {
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(38, 36, 41, 0.215);
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, RequiredValidator, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DatosPersonales } from 'src/app/models/DatosPersonales';
 
@@ -25,7 +25,7 @@ export class DatosPersonalesComponent implements OnInit {
         apellido: ['', Validators.required],
         apodo: ['', Validators.required],
         noIdentidad: ['', Validators.required],
-        sexo: new FormControl(null),
+        sexo: new FormControl(RequiredValidator),
         estadoCivil: ['', Validators.required],
         fechaN: ['', Validators.required],
     })

@@ -14,7 +14,6 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistroComponent } from './components/registro/registro.component';
-import { PersonasComponent } from './components/Empleados/personas/personas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './components/index/index.component';
@@ -34,13 +33,16 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HistoricoComponent } from './components/historico/historico.component';
+import { NominaRegularComponent } from './components/Nomina/nomina-regular/nomina-regular.component';
+import { NominaExtraordinariaComponent } from './components/Nomina/nomina-extraordinaria/nomina-extraordinaria.component';
+import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidacion/nomina-liquidacion.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistroComponent,
-    PersonasComponent,
     NavbarComponent,
     IndexComponent,
     FooterComponent,
@@ -58,6 +60,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     PerfilComponent,
     TandaComponent,
     CargosComponent,
+    HistoricoComponent,
+    NominaRegularComponent,
+    NominaExtraordinariaComponent,
+    NominaLiquidacionComponent,
   ],
   imports: [
     BrowserModule,
