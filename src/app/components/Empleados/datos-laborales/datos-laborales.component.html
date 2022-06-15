@@ -1,64 +1,68 @@
 <div class="card margin__div">
-  <form class="row">
+  <form class="row" [formGroup]="formDatosLaborales">
     <h3 class="titles2">Datos laborales</h3>
     <hr />
     <div class="col-3 margen">
-      <label class="form-label">Fecha de ingreso</label>
-      <input type="date" class="form-control" />
+      <label class="form-label" for="fechaIngreso">Fecha de ingreso</label>
+      <input
+       type="date" 
+       class="form-control" 
+       id="fechaIngreso"
+       formControlName="fechaIngreso"/>
     </div>
     <div class="col-3 margen">
-      <label class="form-label">Departamento</label>
-      <select class="form-select">
-        <option selected disabled value="">Elija una opcion</option>
-        <option>Alta Gerencia</option>
-        <option>Cobro</option>
-        <option>Servicios</option>
-        <option>Contabilidad</option>
+      <label class="form-label" for="departamento">Departamento</label>
+      <select
+       class="form-select"
+       id="departamento"
+       formControlName="departamento">
+        <option *ngFor="let d of departamentos" [ngValue]="d">{{d}}</option>
       </select>
     </div>
     <div class="col-3 margen">
-      <label class="form-label">Cargo</label>
-      <select class="form-select">
-        <option selected disabled value="">Elija una opcion</option>
-        <option>Gerente</option>
-        <option>Gestor de cobro</option>
-        <option>Mensajero</option>
+      <label
+       class="form-label" for="cargo">Cargo</label>
+      <select
+       class="form-select"
+       id="cargo"
+       formControlName="cargo">
+        <option *ngFor="let c of cargos" [ngValue]="c"> {{c}}</option>
       </select>
     </div>
     <div class="col-3 margen">
-      <label class="form-label">Horario</label>
-      <select class="form-select">
-        <option selected disabled value="">Elija una opcion</option>
-        <!--T-TR es Tanda Turno regular y T-TI es tanda turno irregular-->
-        <option>T-TR 1</option>
-        <option>T-TR 2</option>
-        <option>T-TR 3</option>
-        <option>T-TI 1</option>
-        <option>T-TI 2</option>
-        <option>T-TI 3</option>
+      <label class="form-label" for="horario">Horario</label>
+      <select
+       class="form-select"
+       id="horario"
+       formControlName="horario">
+        <option *ngFor="let h of horarios" [ngValue]="h">{{h}}</option>
       </select>
     </div>
     <h1 class="sub-title">Cuenta de banco:</h1>
     <div class="col-3 margen">
-      <label class="form-label">Nombre Cta. Banco</label>
-      <select class="form-select">
-        <option selected disabled value="">Elija una opcion</option>
-        <option>BHD</option>
-        <option>BSC</option>
-        <option>BPD</option>
-        <option>BRD</option>
+      <label class="form-label" for="nombreCta">Nombre Cta. Banco</label>
+      <select
+       class="form-select"
+       id="nombreCta"
+       formControlName="nombreCta">
+        <option *ngFor="let n of nombresCtas" [ngValue]="n">{{n}}</option>
       </select>
     </div>
     <div class="col-4 margen">
-      <label class="form-label">No. Cta. Banco</label>
-      <input type="text" class="form-control" />
+      <label class="form-label" for="noCta">No. Cta. Banco</label>
+      <input
+       type="text" 
+       class="form-control" 
+       id="noCta"
+       formControlName="noCta"/>
     </div>
     <div class="col-3 margen">
-      <label class="form-label">Tipo de cta</label>
-      <select class="form-select">
-        <option selected disabled value="">Elija una opcion</option>
-        <option>Ahorro</option>
-        <option>Corriente</option>
+      <label class="form-label" for="tipoCta">Tipo de cta</label>
+      <select
+       class="form-select"
+       id="tipoCta"
+       formControlName="tipoCta">
+       <option *ngFor="let t of tiposCtas" [ngValue]="t">{{t}}</option>
       </select>
     </div>
     <div class="col-12">
@@ -68,7 +72,10 @@
       >
         VOLVER
       </button>
-      <button class="btn btn-primary float-end">REGISTRAR EMPLEADO</button>
+      <button
+       class="btn btn-primary float-end"
+       (click)="agregarDatosLaborales()"
+       [disabled]="formDatosLaborales.invalid">COMPLETAR REGISTRO</button>
     </div>
   </form>
 </div>

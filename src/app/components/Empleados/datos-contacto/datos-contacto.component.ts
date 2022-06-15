@@ -36,7 +36,7 @@ export class DatosContactoComponent implements OnInit {
         noTel : ['', Validators.required],
         tipoTel : ['', Validators.required],
         estadoTel : ['', Validators.required],
-        usuario : ['', Validators.required],
+        usuarioRed : ['', Validators.required],
         tipoRed : ['', Validators.required],
         estadoRed : ['', Validators.required]
       })
@@ -56,7 +56,7 @@ export class DatosContactoComponent implements OnInit {
   agregarContacto(){
 
     const contacto : DatosConctacto = {
-      emailP :  this.formDatosContacto.get('email')?.value,
+      emailP :  this.formDatosContacto.get('emailP')?.value,
       emailE : this.formDatosContacto.get('emailE')?.value,
       calleNo : this.formDatosContacto.get('calleNo')?.value,
       municipio : this.formDatosContacto.get('municipio')?.value,
@@ -64,7 +64,7 @@ export class DatosContactoComponent implements OnInit {
       referencia : this.formDatosContacto.get('referencia')?.value,
       noTel : this.formDatosContacto.get('noTel')?.value,
       tipoTel : this.formDatosContacto.get('tipoTel')?.value,
-      estadoTel : this.formDatosContacto.get('estadorTel')?.value,
+      estadoTel : this.formDatosContacto.get('estadoTel')?.value,
       usuarioRed : this.formDatosContacto.get('usuarioRed')?.value,
       tipoRed : this.formDatosContacto.get('tipoRed')?.value,
       estadoRed : this.formDatosContacto.get('estadoRed')?.value

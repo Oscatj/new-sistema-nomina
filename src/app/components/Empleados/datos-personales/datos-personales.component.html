@@ -1,77 +1,135 @@
 <div class="card margin__div">
-  <form class="row"  [formGroup]="formDatosPersonales">
+  <form class="row" [formGroup]="formDatosPersonales">
     <h3 class="titles2">Datos personales</h3>
     <hr />
     <div class="col-6 margen">
       <label class="form-label" for="nombre">Nombre</label>
       <input
-       type="text" 
-       id="nombre" 
-       class="form-control" 
-       formControlName="nombre" 
-       placeholder="Ej: Oscarina"
+        type="text"
+        id="nombre"
+        class="form-control"
+        formControlName="nombre"
+        placeholder="Ej: Oscarina"
       />
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('nombre')?.hasError('required') && formDatosPersonales.get('nombre')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('nombre')?.hasError('required') &&
+          formDatosPersonales.get('nombre')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-6 margen">
-      <label class="form-label" for="apellido" >Apellido</label>
-      <input type="text" class="form-control" id="apellido" formControlName="apellido" placeholder="Ej: Tejada" />
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('apellido')?.hasError('required') && formDatosPersonales.get('apellido')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <label class="form-label" for="apellido">Apellido</label>
+      <input
+        type="text"
+        class="form-control"
+        id="apellido"
+        formControlName="apellido"
+        placeholder="Ej: Tejada"
+      />
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('apellido')?.hasError('required') &&
+          formDatosPersonales.get('apellido')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-6 margen">
-      <label class="form-label" for="apodo" >Apodo</label>
-      <input type="text" class="form-control" id="apodo" formControlName="apodo" placeholder="Ej: Lola" />
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('apodo')?.hasError('required') && formDatosPersonales.get('apodo')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <label class="form-label" for="apodo">Apodo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="apodo"
+        formControlName="apodo"
+        placeholder="Ej: Lola"
+      />
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('apodo')?.hasError('required') &&
+          formDatosPersonales.get('apodo')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-6 margen">
       <label class="form-label" for="noIdentidad">Identificación</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="noIdentidad"
         formControlName="noIdentidad"
         placeholder="Ej: 001-01945426-4"
       />
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('noIdentidad')?.hasError('required') && formDatosPersonales.get('noIdentidad')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('noIdentidad')?.hasError('required') &&
+          formDatosPersonales.get('noIdentidad')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-md-3 margen">
       <label class="form-label" for="sexo">Sexo</label>
       <select class="form-select" id="sexo" formControlName="sexo">
         <option *ngFor="let s of sexos" [ngValue]="s">{{ s }}</option>
-        <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('sexo')?.hasError('required') && formDatosPersonales.get('sexo')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
-      </div>
+        <div
+          class="text-danger"
+          *ngIf="
+            formDatosPersonales.get('sexo')?.hasError('required') &&
+            formDatosPersonales.get('sexo')?.touched
+          "
+        >
+          <span>Este campo es <strong>requerido</strong></span>
+        </div>
       </select>
     </div>
     <div class="col-md-3 margen">
       <label class="form-label" for="estadoCivil">Estado Civil</label>
-      <select class="form-select" id="estadoCivil" formControlName="estadoCivil">
+      <select
+        class="form-select"
+        id="estadoCivil"
+        formControlName="estadoCivil"
+      >
         <option *ngFor="let e of estadosCiviles" [ngValue]="e">{{ e }}</option>
       </select>
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('estadoCivil')?.hasError('required') && formDatosPersonales.get('estadoCivil')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('estadoCivil')?.hasError('required') &&
+          formDatosPersonales.get('estadoCivil')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-3 margen">
       <label class="form-label" for="fechaN">Fecha Nacimiento</label>
-      <input type="date" id="fechaN" min="1900-01-01" max="2004-01-01" class="form-control" formControlName="fechaN"/>
-      <div class="text-danger"
-        *ngIf= "formDatosPersonales.get('fechaN')?.hasError('required') && formDatosPersonales.get('fechaN')?.touched">
-        <span >Este campo es <strong>requerido</strong></span>
+      <input
+        type="date"
+        id="fechaN"
+        min="1900-01-01"
+        max="2004-01-01"
+        class="form-control"
+        formControlName="fechaN"
+      />
+      <div
+        class="text-danger"
+        *ngIf="
+          formDatosPersonales.get('fechaN')?.hasError('required') &&
+          formDatosPersonales.get('fechaN')?.touched
+        "
+      >
+        <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
     <div class="col-12">
