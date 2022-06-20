@@ -1,6 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
+import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -10,6 +11,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,11 +34,11 @@ import { DepartamentosComponent } from './components/maestros/departamentos/depa
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HistoricoComponent } from './components/historico/historico.component';
 import { NominaRegularComponent } from './components/Nomina/nomina-regular/nomina-regular.component';
 import { NominaExtraordinariaComponent } from './components/Nomina/nomina-extraordinaria/nomina-extraordinaria.component';
 import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidacion/nomina-liquidacion.component';
+import { FormularioNominaRegularComponent } from './components/Nomina/nomina-regular/formulario-nomina-regular/formulario-nomina-regular.component';
 
 
 @NgModule({
@@ -64,9 +66,11 @@ import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidaci
     NominaRegularComponent,
     NominaExtraordinariaComponent,
     NominaLiquidacionComponent,
+    FormularioNominaRegularComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
@@ -74,6 +78,7 @@ import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidaci
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
+    MatAutocompleteModule,
     MatListModule,
     AppRoutingModule,
     ReactiveFormsModule,

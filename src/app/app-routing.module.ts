@@ -18,6 +18,7 @@ import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/
 import { NominaRegularComponent } from './components/Nomina/nomina-regular/nomina-regular.component';
 import { NominaExtraordinariaComponent } from './components/Nomina/nomina-extraordinaria/nomina-extraordinaria.component';
 import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidacion/nomina-liquidacion.component';
+import { FormularioNominaRegularComponent } from './components/Nomina/nomina-regular/formulario-nomina-regular/formulario-nomina-regular.component';
 
 const routes: Routes = [
   {path:'registro',component: RegistroComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path: 'app-nomina-regular', component: NominaRegularComponent},
   {path: 'app-nomina-extraordinaria', component: NominaExtraordinariaComponent},
   {path: 'app-nomina-liquidacion', component: NominaLiquidacionComponent},
+  {path: 'app-formulario-nomina-regular', component: FormularioNominaRegularComponent},
   {path:'**',pathMatch:'full',redirectTo:'index'}, 
 ];
 
