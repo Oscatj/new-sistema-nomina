@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith, debounceTime } from 'rxjs/operators';
-import { Nomina } from 'src/app/models/nomina';
+import { Nomina } from 'src/app/models/nominaRegular';
 
 @Component({
   selector: 'app-nomina-regular',

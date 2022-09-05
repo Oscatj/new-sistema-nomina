@@ -1,7 +1,13 @@
-<div class="card margin__div">
+<div class="modalC">
+  <div class="modalC-content">
+    <div class="modalC-header">
+      <div class="modalC-title">
+        <span class="titles2">Datos Personales</span>
+        <i class="material-symbols-outlined">close</i>
+      </div>
+  </div>
+<div class="modalC-container card">
   <form class="row" [formGroup]="formDatosPersonales">
-    <h3 class="titles2">Datos personales</h3>
-    <hr />
     <div class="col-6 margen">
       <label class="form-label" for="nombre">Nombre</label>
       <input
@@ -113,7 +119,7 @@
       </div>
     </div>
     <div class="col-3 margen">
-      <label class="form-label" for="fechaN">Fecha Nacimiento</label>
+      <label class="form-label" for="fechaN">Nacimiento</label>
       <input
         type="date"
         id="fechaN"
@@ -143,4 +149,6 @@
       </button>
     </div>
   </form>
+</div>
+</div>
 </div>

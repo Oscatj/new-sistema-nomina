@@ -1,7 +1,14 @@
-<div class="card margin__div">
+<div class="modalC">
+  <div class="modalC-content">
+    <div class="modalC-header">
+      <div class="modalC-title">
+        <span class="titles2">Datos laborales</span>
+        <i class="material-symbols-outlined">close</i>
+      </div>
+  </div>
+<div class="card modalC-container">
   <form class="row" [formGroup]="formDatosLaborales">
-    <h3 class="titles2">Datos laborales</h3>
-    <hr />
+    <div class="row">
     <div class="col-3 margen">
       <label class="form-label" for="fechaIngreso">Fecha de ingreso</label>
       <input
@@ -38,9 +45,10 @@
         <option *ngFor="let h of horarios" [ngValue]="h">{{h}}</option>
       </select>
     </div>
-    <h1 class="sub-title">Cuenta de banco:</h1>
+  </div>
+  <div class="row contenido">
     <div class="col-3 margen">
-      <label class="form-label" for="nombreCta">Nombre Cta. Banco</label>
+      <label class="form-label" for="nombreCta">Nombre Cta.</label>
       <select
        class="form-select"
        id="nombreCta"
@@ -65,7 +73,8 @@
        <option *ngFor="let t of tiposCtas" [ngValue]="t">{{t}}</option>
       </select>
     </div>
-    <div class="col-12">
+  </div>  
+    <div class="col-12 contenido">
       <button
         class="btn btn-secondary float-start"
         routerLink="/app-datos-contacto"
@@ -78,4 +87,5 @@
        [disabled]="formDatosLaborales.invalid">COMPLETAR REGISTRO</button>
     </div>
   </form>
+</div>
 </div>

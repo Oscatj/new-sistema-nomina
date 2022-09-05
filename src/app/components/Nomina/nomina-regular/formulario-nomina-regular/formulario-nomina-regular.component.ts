@@ -11,6 +11,12 @@ export class FormularioNominaRegularComponent implements OnInit {
 
   departamentos : string [] = ['Sistemas', 'Contabilidad'];
 
+  nombresCtas : string [] = ['BHD', 'BPD', 'BRRD'];
+  defaultNombresCta : string = 'Elija una opcion';
+
+  tiposCtas : string [] = ['Ahorro', 'Corriente'];
+  defaultTiposCtas : string = 'Elija una opcion';
+  
   constructor() { }
 
   ngOnInit(): void {

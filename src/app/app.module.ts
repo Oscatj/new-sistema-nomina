@@ -12,6 +12,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatTableModule} from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,10 +28,6 @@ import { IndexComponent } from './components/index/index.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { NominaComponent } from './components/Nomina/nomina/nomina.component';
-import { ListaPersonasComponent } from './components/Empleados/lista-personas/lista-personas.component';
-import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
-import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
-import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
 import { BancosComponent } from './components/maestros/bancos/bancos.component';
 import { HorariosComponent } from './components/maestros/horarios/horarios.component';
 import { EmpresasComponent } from './components/maestros/empresas/empresas.component';
@@ -35,10 +37,13 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
 import { HistoricoComponent } from './components/historico/historico.component';
-import { NominaRegularComponent } from './components/Nomina/nomina-regular/nomina-regular.component';
-import { NominaExtraordinariaComponent } from './components/Nomina/nomina-extraordinaria/nomina-extraordinaria.component';
-import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidacion/nomina-liquidacion.component';
-import { FormularioNominaRegularComponent } from './components/Nomina/nomina-regular/formulario-nomina-regular/formulario-nomina-regular.component';
+import { NominaModalComponent } from './components/modals/nomina-modal/nomina-modal.component';
+import { ListaPersonasComponent } from './components/Empleados/lista-personas/lista-personas.component';
+import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
+import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
+import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
+import { ActualizarNominaComponent } from './components/modals/actualizar-nomina/actualizar-nomina.component';
+
 
 
 @NgModule({
@@ -50,10 +55,6 @@ import { FormularioNominaRegularComponent } from './components/Nomina/nomina-reg
     FooterComponent,
     PanelComponent,
     NominaComponent,
-    ListaPersonasComponent,
-    DatosPersonalesComponent,
-    DatosContactoComponent,
-    DatosLaboralesComponent,
     BancosComponent,
     HorariosComponent,
     EmpresasComponent,
@@ -62,11 +63,13 @@ import { FormularioNominaRegularComponent } from './components/Nomina/nomina-reg
     PerfilComponent,
     TandaComponent,
     CargosComponent,
-    HistoricoComponent,
-    NominaRegularComponent,
-    NominaExtraordinariaComponent,
-    NominaLiquidacionComponent,
-    FormularioNominaRegularComponent,
+    HistoricoComponent, 
+    ListaPersonasComponent,
+    DatosPersonalesComponent,
+    DatosContactoComponent,
+    DatosLaboralesComponent,
+    NominaModalComponent,
+    ActualizarNominaComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,14 +80,19 @@ import { FormularioNominaRegularComponent } from './components/Nomina/nomina-reg
     MatSidenavModule,
     MatIconModule,
     MatTabsModule,
+    MatTableModule,
     MatGridListModule,
+    MatDatepickerModule,
     MatAutocompleteModule,
     MatListModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
     ToastrModule.forRoot(),
-    
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

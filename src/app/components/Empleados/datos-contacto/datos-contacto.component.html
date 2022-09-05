@@ -1,38 +1,44 @@
-<div class="card margin__div">
-  <form class="row" [formGroup]="formDatosContacto">
-    <h2 class="titles2">Datos de contacto</h2>
-    <hr />
-    <h2 class="sub-title margen">Email:</h2>
-    <div class="col-md-4">
-      <label class="form-label" for="emailP">Email Personal</label>
-      <input
-        type="text"
-        id="emailP"
-        class="form-control"
-        placeholder="ejemplo@gmail.com.do"
-        formControlName="emailP"
-      />
-      <div
-        class="text-danger"
-        *ngIf="
-          formDatosContacto.get('emailP')?.hasError('required') &&
-          formDatosContacto.get('emailP')?.touched
-        "
-      >
-        <span>Este campo es <strong>requerido</strong></span>
+<div class="modalC">
+  <div class="modalC-content">
+    <div class="modalC-header">
+      <div class="modalC-title">
+        <span class="titles2">Datos de contacto</span>
+        <i class="material-symbols-outlined">close</i>
       </div>
+  </div>
+<div class="modalC-container card">
+  <form class="row" [formGroup]="formDatosContacto">
+    <div class="row">
+      <div class="col-md-6">
+        <label class="form-label" for="emailP">Email Personal</label>
+        <input
+          type="text"
+          id="emailP"
+          class="form-control"
+          placeholder="ejemplo@gmail.com.do"
+          formControlName="emailP"
+        />
+        <div
+          class="text-danger"
+          *ngIf="
+            formDatosContacto.get('emailP')?.hasError('required') &&
+            formDatosContacto.get('emailP')?.touched
+          "
+        >
+          <span>Este campo es <strong>requerido</strong></span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="emailE">Email empresarial</label>
+        <input
+          type="email"
+          id="emailE"
+          class="form-control"
+          placeholder="ejemplo@empresa.com.do"
+          aria-describedby="inputGroupPrepend"
+          formControlName="emailE"
+        />
     </div>
-
-    <div class="col-md-4">
-      <label class="form-label" for="emailE">Email empresarial</label>
-      <input
-        type="email"
-        id="emailE"
-        class="form-control"
-        placeholder="ejemplo@empresa.com.do"
-        aria-describedby="inputGroupPrepend"
-        formControlName="emailE"
-      />
       <div
         class="text-danger"
         *ngIf="
@@ -43,63 +49,63 @@
         <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
-    <h2 class="sub-title margen">Direccion:</h2>
-    <div class="col-3">
-      <label class="form-label" for="calleNo">Calle y número</label>
-      <input
-        type="text"
-        class="form-control"
-        id="calleNo"
-        placeholder="Calle A, no. 12"
-        formControlName="calleNo"
-      />
-      <div
-        class="text-danger"
-        *ngIf="
-          formDatosContacto.get('calleNo')?.hasError('required') &&
-          formDatosContacto.get('calleNo')?.touched
-        "
-      >
-        <span>Este campo es <strong>requerido</strong></span>
+    <div class="row contenido">
+      <div class="col-3">
+        <label class="form-label" for="calleNo">Dirección</label>
+        <input
+          type="text"
+          class="form-control"
+          id="calleNo"
+          placeholder="Calle A, no. 12"
+          formControlName="calleNo"
+        />
+        <div
+          class="text-danger"
+          *ngIf="
+            formDatosContacto.get('calleNo')?.hasError('required') &&
+            formDatosContacto.get('calleNo')?.touched
+          "
+        >
+          <span>Este campo es <strong>requerido</strong></span>
+        </div>
       </div>
-    </div>
-    <div class="col-3">
-      <label class="form-label" for="municipio">Municipio / Sector</label>
-      <input
-        type="text"
-        id="municipio"
-        class="form-control"
-        placeholder="Herrera"
-        formControlName="municipio"
-      />
-      <div
-        class="text-danger"
-        *ngIf="
-          formDatosContacto.get('municipio')?.hasError('required') &&
-          formDatosContacto.get('municipio')?.touched
-        "
-      >
-        <span>Este campo es <strong>requerido</strong></span>
+      <div class="col-3">
+        <label class="form-label" for="municipio">Municipio</label>
+        <input
+          type="text"
+          id="municipio"
+          class="form-control"
+          placeholder="Herrera"
+          formControlName="municipio"
+        />
+        <div
+          class="text-danger"
+          *ngIf="
+            formDatosContacto.get('municipio')?.hasError('required') &&
+            formDatosContacto.get('municipio')?.touched
+          "
+        >
+          <span>Este campo es <strong>requerido</strong></span>
+        </div>
       </div>
-    </div>
-    <div class="col-3">
-      <label class="form-label" for="provincia">Provincia</label>
-      <input
-        type="text"
-        id="provincia"
-        class="form-control"
-        placeholder="Santo Domingo Oeste"
-        formControlName="provincia"
-      />
-      <div
-        class="text-danger"
-        *ngIf="
-          formDatosContacto.get('provincia')?.hasError('required') &&
-          formDatosContacto.get('provincia')?.touched
-        "
-      >
-        <span>Este campo es <strong>requerido</strong></span>
-      </div>
+      <div class="col-3">
+        <label class="form-label" for="provincia">Provincia</label>
+        <input
+          type="text"
+          id="provincia"
+          class="form-control"
+          placeholder="Santo Domingo Oeste"
+          formControlName="provincia"
+        />
+        <div
+          class="text-danger"
+          *ngIf="
+            formDatosContacto.get('provincia')?.hasError('required') &&
+            formDatosContacto.get('provincia')?.touched
+          "
+        >
+          <span>Este campo es <strong>requerido</strong></span>
+        </div>
     </div>
     <div class="col-3">
       <label class="form-label" for="referencia">Referencia</label>
@@ -120,10 +126,11 @@
         <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
-    <h2 class="sub-title">Telefono:</h2>
+  </div>
+  <div class="row contenido">
     <div class="col-3">
       <!--Poner mascara para limitar la cantidad de digitos y dividir con (-)-->
-      <label class="form-label" for="noTel">No. Telefono</label>
+      <label class="form-label" for="noTel">Teléfono</label>
       <input
         type="tel"
         name="noTel"
@@ -172,7 +179,8 @@
         <span>Este campo es <strong>requerido</strong></span>
       </div>
     </div>
-    <h2 class="sub-title margen">Redes sociales:</h2>
+  </div>
+  <div class="row contenido">
     <div class="col-4">
       <label class="form-label" for="usuarioRed">Usuario</label>
       <input
@@ -231,7 +239,7 @@
       </div>
     </div>
     -->
-    <div class="col-12 margen">
+    <div class="col-12 margen contenido">
       <button
         class="btn btn-secondary float-start"
         type="button"
@@ -248,5 +256,7 @@
         GUARDAR
       </button>
     </div>
+  </div>
   </form>
+</div>
 </div>

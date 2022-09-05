@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { NominaService } from 'src/app/services/nomina.service';
 
 @Component({
   selector: 'app-nomina',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NominaComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private serviceNomina: NominaService){
+  }
+  
+  get nomina(){
+      return this.serviceNomina.nomina;
+  }
+  /*
+  delete(nomina: Nomina){
+    this.serviceNomina.deleteEmpleado(nomina.nombre);
+  }*/
+ 
+  toppings = new FormControl('');
+
+  toppingList: string[] = ['Semanal', 'Mensual', 'Quincenal', 'Todas las nóminas'];
 
   ngOnInit(): void {
   }
-
 }

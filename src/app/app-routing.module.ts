@@ -15,10 +15,8 @@ import { CargosComponent } from './components/maestros/cargos/cargos.component';
 import { DatosPersonalesComponent } from './components/Empleados/datos-personales/datos-personales.component';
 import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
 import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
-import { NominaRegularComponent } from './components/Nomina/nomina-regular/nomina-regular.component';
-import { NominaExtraordinariaComponent } from './components/Nomina/nomina-extraordinaria/nomina-extraordinaria.component';
-import { NominaLiquidacionComponent } from './components/Nomina/nomina-liquidacion/nomina-liquidacion.component';
-import { FormularioNominaRegularComponent } from './components/Nomina/nomina-regular/formulario-nomina-regular/formulario-nomina-regular.component';
+import { NominaModalComponent } from './components/modals/nomina-modal/nomina-modal.component';
+import { ActualizarNominaComponent } from './components/modals/actualizar-nomina/actualizar-nomina.component';
 
 const routes: Routes = [
   {path:'registro',component: RegistroComponent},
@@ -36,10 +34,8 @@ const routes: Routes = [
   {path: 'app-datos-personales', component: DatosPersonalesComponent},
   {path: 'app-datos-contacto', component: DatosContactoComponent},
   {path: 'app-datos-laborales', component: DatosLaboralesComponent},
-  {path: 'app-nomina-regular', component: NominaRegularComponent},
-  {path: 'app-nomina-extraordinaria', component: NominaExtraordinariaComponent},
-  {path: 'app-nomina-liquidacion', component: NominaLiquidacionComponent},
-  {path: 'app-formulario-nomina-regular', component: FormularioNominaRegularComponent},
+  {path: 'nomina-modal', component: NominaModalComponent},
+  {path: 'app-actualizar', component: ActualizarNominaComponent},
   {path:'**',pathMatch:'full',redirectTo:'index'}, 
 ];
 

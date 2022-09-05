@@ -1,0 +1,76 @@
+<div class="modalC">
+  <div class="modalC-content">
+    <div class="modalC-header">
+      <div class="modalC-title">
+        <span class="titles2">Añadir a nomina</span>
+        <i class="material-symbols-outlined">close</i>
+      </div>
+    </div>
+    <div class="modalC-container card">
+      <form class="row">
+        <div class="col-4 margen">
+          <label class="form-label" for="codEmpleado">Id. Empleado</label>
+          <input
+            type="number"
+            class="form-control"
+            id="codEmpleado"
+            formControlName="codEmpleado"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="sueldo">Sueldo Base</label>
+          <input
+            type="number"
+            class="form-control"
+            id="sueldo"
+            formControlName="sueldo"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="afp">AFP</label>
+          <input
+            type="number"
+            class="form-control"
+            id="afp"
+            formControlName="afp"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="sfs">SFS</label>
+          <input
+            type="number"
+            class="form-control"
+            id="sfs"
+            formControlName="sfs"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="isr">ISR</label>
+          <input
+            type="number"
+            class="form-control"
+            id="isr"
+            formControlName="isr"
+          />
+        </div>
+        <div class="col-4 margen">
+          <label class="form-label" for="departamento">Nomina</label>
+          <select
+            class="form-select"
+            id="departamento"
+            formControlName="departamento"
+          >
+            <option *ngFor="let tn of tipoNomina" [ngValue]="tn">
+              {{ tn }}
+            </option>
+          </select>
+        </div>
+      </form>
+      <button
+          class="btn btn-primary"
+          routerLink="/"
+          >GUARDAR
+        </button>
+    </div>
+  </div>
+</div>

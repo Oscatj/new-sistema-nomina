@@ -1,4 +1,17 @@
-<h1 class="titles">NOMINA REGULAR</h1>
+<h1 class="titles">AGREGAR NUEVO EMPLEADO A NOMINA</h1>
+<div class="col-4" style="margin-left: 10px;">
+  <div class="input-group">
+    <div class="form-outline">
+      <input
+       type="search" 
+       id="form1" 
+       class="form-control" 
+       name="nombre" 
+       #myInput 
+       placeholder="Buscar un empleado">
+    </div>
+  </div>
+</div>
 <form class="row">
 <div class="card">
     <form class="row">
@@ -48,9 +61,41 @@
       <div class="col-4 margen">
         <label class="form-label" for="departamento">Fecha de ingreso</label>
         <input type="date" class="form-control" />
-      </div>
-    </form>
-  </div>
+      </div>   
+  </form>
+</div>
+<div class="card">
+  <form class="row">
+    <h2 class="sub-title">Datos de la Cta:</h2>
+    <div class="col-3 margen">
+      <label class="form-label" for="nombreCta">Nombre Cta. Banco</label>
+      <select
+       class="form-select"
+       id="nombreCta"
+       formControlName="nombreCta">
+        <option *ngFor="let n of nombresCtas" [ngValue]="n">{{n}}</option>
+      </select>
+    </div>
+    <div class="col-4 margen">
+      <label class="form-label" for="noCta">No. Cta. Banco</label>
+      <input
+       type="text" 
+       class="form-control" 
+       id="noCta"
+       formControlName="noCta"/>
+    </div>
+    <div class="col-3 margen">
+      <label class="form-label" for="tipoCta">Tipo de cta</label>
+      <select
+       class="form-select"
+       id="tipoCta"
+       formControlName="tipoCta">
+       <option *ngFor="let t of tiposCtas" [ngValue]="t">{{t}}</option>
+      </select>
+    </div>
+  </form>
+</div>
+
   <div class="card">
     <form class="row">
       <h2 class="sub-title">Ingresos:</h2>

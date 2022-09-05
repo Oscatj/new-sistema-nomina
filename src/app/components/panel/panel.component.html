@@ -1,97 +1,99 @@
 <body>
-        <ul class="list">
-            <li class="list__item title__perfil">
-                <div class="list__button">
-                    <img src="https://ajisenramenpanama.com/wp-content/uploads/2020/07/user_icon.png" width="35px" alt="user">
-                    <label class="perfil" routerLink="/perfil">Oscarina Tejada</label> 
-                </div>
-            </li>
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../../../assets/img/home.svg" width="20px" alt="panel de control">
-                    <a href="#" class="nav__link" [routerLink]="['/']">Panel de control</a> 
-                </div>
-            </li>
+    <ul class="list">
+        <li class="list__item">
+            <div class="list__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                  </svg>
+                <a href="#" class="nav__link" [routerLink]="['/']">Panel de control</a> 
+            </div>
+        </li>
+        <li class="list__item list__item--click">
+            <div class="list__button list__button--click">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                  </svg>
+                <span src href="#" class="nav__link" routerLink="/listaPersonas">Personas</span>
+            </div>
+        </li>
+        <li class="list__item list__item--click">
+            <div class="list__button list__button--click">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-currency-exchange" viewBox="0 0 16 16">
+                    <path d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"/>
+                  </svg>
+                <span href="#" class="nav__link" routerLink="nomina">Nómina</span>
+            </div>
+        </li>
 
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <img src="../../../assets/img/addperson.svg" width="20px" alt="modulo de personas">
-                    <span src href="#" class="nav__link" routerLink="/app-datos-personales">Personas</span>
-                </div>
-            </li>
+        <li class="list__item">
+            <div class="list__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg>
+                <a href="#" class="nav__link">Histórico</a>
+            </div>
+        </li>
+        <li class="list__item list__item--click">
+            <div class="list__button list__button--click">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                <span href="#" class="nav__link">Consultas</span>
+                <img src="../../../assets/img/arrow.svg" width="20px" alt="arrow" class="list__arrow">
+            </div>
+            <ul class="list__show">
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="/listaPersonas">Empleados</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="/bancos">Nominas</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="empresas">Horarios</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="departamentos">Departamentos</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="cargo">Cargos</a>
+                </li>
+            </ul>
+        </li>
+        <li class="list__item list__item--click">
+            <div class="list__button list__button--click">
+                <img src="../../../assets/img/config.svg" width="20" height="30" alt="configuracion">
+                <span href="#" class="nav__link">Mantenimiento</span>
+                <img src="../../../assets/img/arrow.svg" width="20px" alt="arrow" class="list__arrow">
+            </div>
+            <ul class="list__show">
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="/horarios">Horarios</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="/bancos">Bancos</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="empresas">Empresas</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="departamentos">Departamentos</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="cargo">Cargos</a>
+                </li>
+                <li class="list__inside">
+                    <a href="#" class="nav__link nav__link--inside padding" routerLink="usuarios">Usuarios</a>
+                </li>
+            </ul>
+        </li>
 
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <img src="../../../assets/img/nomina.svg" width="20px" alt="modulo de nomina" class="list__img">
-                    <span href="#" class="nav__link" routerLink="nomina">Nómina</span>
-                </div>
-            </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../../../assets/img/history.svg" width="20px" alt="historia">
-                    <a href="#" class="nav__link">Histórico</a>
-                </div>
-            </li>
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <img src="../../../assets/img/seach.svg" width="20px" alt="consultas">
-                    <span href="#" class="nav__link">Consultas</span>
-                    <img src="../../../assets/img/arrow.svg" width="20px" alt="arrow" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="/listaPersonas">Ver empleados</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="/bancos">Nominas</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="empresas">Horarios</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="departamentos">Departamen</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="cargo">Cargos</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <img src="../../../assets/img/config.svg" width="20px" alt="configuracion">
-                    <span href="#" class="nav__link">Mantenimiento</span>
-                    <img src="../../../assets/img/arrow.svg" width="20px" alt="arrow" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="/horarios">Horarios</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="/bancos">Bancos</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="empresas">Empresa</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="departamentos">Departamentos</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="cargo">Cargos</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside padding" routerLink="usuarios">Usuarios</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../../../assets/img/cerrar.svg" width="20px" alt="cerrar sesion" class="list__img">
-                    <a href="#" class="nav__link">Cerrar Sesion</a>
-                </div>
-            </li>
-        </ul>
+        <li class="list__item">
+            <div class="list__button">
+                <img src="../../../assets/img/cerrar.svg" width="20" height="30" alt="cerrar sesion" class="list__img">
+                <a href="#" class="nav__link">Cerrar Sesion</a>
+            </div>
+        </li>
+    </ul>
 </body>
 <div style="display: inline-flex;" >
 </div>

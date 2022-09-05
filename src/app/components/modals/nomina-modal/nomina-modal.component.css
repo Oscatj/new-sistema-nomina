@@ -14,7 +14,7 @@
 }
 .modalC .modalC-content{
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     color: black;
 }
 .modalC .modalC-header{
@@ -33,7 +33,7 @@
     height: 45px;
     width: 55px;
     margin-top: 10px;
-    margin-left: 420px;
+    margin-left: 240px;
     color: rgb(2, 0, 145);
 }
 .modalC-title i:hover{
@@ -50,4 +50,8 @@
     border-radius: 0 0 4px 4px;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid gray;
+}
+.btn{
+    margin: 20px 100px;
+    background-color: rgba(0, 56, 108, 0.966);
 }
