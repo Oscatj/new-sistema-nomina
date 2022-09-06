@@ -7,3 +7,31 @@
 .input-group{
     border-radius: 10px;
 }
+
+  i{
+      cursor: pointer;
+  }
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+  table{
+    text-align: justify;
+  }
+  .example-form-field {
+    width: 200px;
+  }
+  .example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+    padding-left: 40px;
+  }
+  .search__nomina {
+    margin-top: 10px;
+    height: 10%;
+    width: 100%;
+    text-align: end;
+    background-color: rgb(178, 178, 178);
+    border: 0px solid  rgb(201, 201, 201);
+  }
+  

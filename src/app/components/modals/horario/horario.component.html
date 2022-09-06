@@ -1,0 +1,64 @@
+<div class="modalC">
+    <div class="modalC-content">
+      <div class="modalC-header">
+        <div class="modalC-title">
+          <span class="titles2">Nuevo Horario</span>
+          <i class="material-symbols-outlined">close</i>
+        </div>
+      </div>
+      <div class="modalC-container card">
+        <form class="row">
+            <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Tanda 1</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elija una opcion</option>
+                  <option>L-S: 8:00 a 12:00</option>
+                  <option>L-S: 7:30 a 12:00</option>
+                  <option>L-V: 8:00 a 12:00</option>
+                  <option>L-V: 8:00 a 1:00</option>
+                  <option>L-S: 9:00 a 1:00</option>
+                </select>
+              </div>
+          <div class="col-4 margen">
+            <label for="validationCustom03" class="form-label">Tanda 2</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elija una opcion</option>
+              <option>L-V: 1:00 a 5:00</option>
+              <option>L-V: 1:00 a 4:30</option>
+              <option>L-V: 1:00 a 6:00</option>
+              <option>L-V: 2:00 a 6:00</option>
+            </select>
+          </div>
+          <div class="col-4 margen">
+            <label class="form-label" for="afp">Nombre</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-4 margen">
+            <label class="form-label" for="afp">Descripción</label>
+            <textarea class="form-control" name="" id="" cols="10" rows="2"></textarea>
+          </div>
+          <div class="col-4 margen">
+            <label for="validationCustom03" class="form-label">Estado</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elija una opcion</option>
+              <option>Activo</option>
+              <option>Inactivo</option>
+            </select>
+          </div>
+          <div class="col-4 margen">
+            <label for="validationCustom03" class="form-label">Asignable</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Elija una opcion</option>
+              <option>Todos</option>
+              <option>Solo Empleados</option>
+            </select>
+          </div>
+        </form>
+        <button
+            class="btn btn-primary"
+            routerLink="/"
+            >GUARDAR
+          </button>
+      </div>
+    </div>
+  </div>

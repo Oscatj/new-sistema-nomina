@@ -21,7 +21,6 @@ import {MatTableModule} from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistroComponent } from './components/registro/registro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './components/index/index.component';
@@ -30,11 +29,9 @@ import { PanelComponent } from './components/panel/panel.component';
 import { NominaComponent } from './components/Nomina/nomina/nomina.component';
 import { BancosComponent } from './components/maestros/bancos/bancos.component';
 import { HorariosComponent } from './components/maestros/horarios/horarios.component';
-import { EmpresasComponent } from './components/maestros/empresas/empresas.component';
 import { UsuariosComponent } from './components/maestros/usuarios/usuarios.component';
 import { DepartamentosComponent } from './components/maestros/departamentos/departamentos.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
-import { TandaComponent } from './components/maestros/tanda/tanda.component';
 import { CargosComponent } from './components/maestros/cargos/cargos.component';
 import { HistoricoComponent } from './components/historico/historico.component';
 import { NominaModalComponent } from './components/modals/nomina-modal/nomina-modal.component';
@@ -43,13 +40,18 @@ import { DatosPersonalesComponent } from './components/Empleados/datos-personale
 import { DatosContactoComponent } from './components/Empleados/datos-contacto/datos-contacto.component';
 import { DatosLaboralesComponent } from './components/Empleados/datos-laborales/datos-laborales.component';
 import { ActualizarNominaComponent } from './components/modals/actualizar-nomina/actualizar-nomina.component';
+import { HorarioComponent } from './components/modals/horario/horario.component';
+import { TandaModalComponent } from './components/modals/tanda-modal/tanda-modal.component';
+import { BancoModalComponent } from './components/modals/banco-modal/banco-modal.component';
+import { DepartModalComponent } from './components/modals/depart-modal/depart-modal.component';
+import { CargosModalComponent } from './components/modals/cargos-modal/cargos-modal.component';
+import { UsuarioModalComponent } from './components/modals/usuario-modal/usuario-modal.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistroComponent,
     NavbarComponent,
     IndexComponent,
     FooterComponent,
@@ -57,11 +59,9 @@ import { ActualizarNominaComponent } from './components/modals/actualizar-nomina
     NominaComponent,
     BancosComponent,
     HorariosComponent,
-    EmpresasComponent,
     UsuariosComponent,
     DepartamentosComponent,
     PerfilComponent,
-    TandaComponent,
     CargosComponent,
     HistoricoComponent, 
     ListaPersonasComponent,
@@ -70,6 +70,12 @@ import { ActualizarNominaComponent } from './components/modals/actualizar-nomina
     DatosLaboralesComponent,
     NominaModalComponent,
     ActualizarNominaComponent,
+    HorarioComponent,
+    TandaModalComponent,
+    BancoModalComponent,
+    DepartModalComponent,
+    CargosModalComponent,
+    UsuarioModalComponent,
   ],
   imports: [
     BrowserModule,

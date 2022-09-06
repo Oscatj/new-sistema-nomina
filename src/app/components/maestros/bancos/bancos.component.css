@@ -1,6 +1,3 @@
-.card{
-    margin: 15px;
-}
 .title{
     text-align: center; 
     margin-top: 7px;
@@ -12,18 +9,8 @@
     height: 100%;
     margin: 0;
 }
-.margen .btn-success {
-    margin-top: 32px;
-}
-.margen{
-    margin: 10px 0;
-}
 .position-button .btn-secondary{
     margin-right: 790px;  
-}
-.btn{
-    font-size: medium;
-    margin-top: 20px; 
 }
 form{
     width: 100%;

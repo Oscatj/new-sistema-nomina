@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TandaComponent } from './tanda.component';
+import { UsuarioModalComponent } from './usuario-modal.component';
 
-describe('TandaComponent', () => {
-  let component: TandaComponent;
-  let fixture: ComponentFixture<TandaComponent>;
+describe('UsuarioModalComponent', () => {
+  let component: UsuarioModalComponent;
+  let fixture: ComponentFixture<UsuarioModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TandaComponent ]
+      declarations: [ UsuarioModalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TandaComponent);
+    fixture = TestBed.createComponent(UsuarioModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

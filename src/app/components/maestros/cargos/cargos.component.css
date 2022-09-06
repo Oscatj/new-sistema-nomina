@@ -1,30 +1,17 @@
-.card{
-    margin: 15px;
+.btn {
+    margin-left: 20px;
 }
 .title{
-    text-align: center; 
-    margin-top: 7px;
+    text-align: justify; 
 }
-
 .position-button{
     text-align: center;
     color: rgb(27, 27, 95);
     height: 100%;
     margin: 0;
 }
-.margen .btn-success {
-    margin-top: 32px;
-}
 .margen{
     margin: 10px 0;
-}
-.margen 
-.position-button .btn-secondary{
-    margin-right: 790px;  
-}
-.btn{
-    font-size: medium;
-    margin-top: 20px; 
 }
 form{
     width: 100%;

@@ -1,0 +1,71 @@
+<div class="modalC">
+    <div class="modalC-content">
+      <div class="modalC-header">
+        <div class="modalC-title">
+          <span class="titles2">Nuevo Banco</span>
+          <i class="material-symbols-outlined">close</i>
+        </div>
+      </div>
+      <div class="modalC-container card">
+        <form class="row">
+            <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Abreviatura</label>
+                <input type="text" class="form-control" placeholder="Ej. BHD" />
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej. Banco Popular Dominicano"
+                />
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Estado</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elija una opcion</option>
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select>
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Dirección</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label"
+                  >Sector</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Provincia</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>          
+        </form>
+        <button
+            class="btn btn-primary"
+            routerLink="/"
+            >GUARDAR
+          </button>
+      </div>
+    </div>
+  </div>

@@ -1,66 +1,62 @@
-<div class="card-body text-center">
-  <span class="titles title">LISTADO DE EMPLEADOS</span>
+<div class="card-body">
+  <span class="titles title">EMPLEADOS</span>
   <button
     class="btn btn-success d-grid gap-3 mx-auto float-end"
     routerLink="/app-datos-personales"
   >
     NUEVO
   </button>
-  <div class="input-group mb-8">
-    <input class="fa fa-search" aria-hidden="true"
-      type="text"
-      placeholder="Buscar"
-      aria-label="name"
-      aria-describedby="basic-addon1"
-    />
-    <button
-      class="material-symbols-outlined input-group-text"
-    >
-      search
-    </button>
-  </div>
 </div>
-<div class="container mt-2">
-  <div class="row">
-    <div class="col-lg-18">
-      <div class="card">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">Codigo</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellido</th>
-              <th scope="col">Identidad</th>
-              <th scope="col">Departamento</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>402-0594541-1</td>
-              <td>Sistemas</td>
-              <td>
-                <i class="material-symbols-outlined text-primary">edit</i>
-                <i class="material-symbols-outlined text-danger">delete</i>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>402-0594541-1</td>
-              <td>Contabilidad</td>
-              <td>
-                <i class="material-symbols-outlined text-primary">edit</i>
-                <i class="material-symbols-outlined text-danger">delete</i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+<div class="search__nomina">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Buscar empleado</mat-label>
+    <input matInput type="search" name="nombre" #myInput />
+    <button matSuffix mat-icon-button aria-label="Search">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="">
+    <div class="row">
+      <div class="col-lg-18">
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Sueldo Base</th>
+                <th scope="col">Deducciones</th>
+                <th scope="col">Sueldo Neto</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--
+        <tr *ngFor="let n of nomina">
+          <td scope="row">{{ n.id }}</td>
+          <td>{{ n.cargo }}</td>
+          <td>{{ n.departamento }}</td>
+          <td>{{ n.sueldoB | currency: 'RD': 'symbol': '4.2-2'}}</td>
+          <td>{{ n.cantHorasE | currency: 'RD': 'symbol': '4.2-2'}}</td>
+          <td>{{ n.pHorasE | currency: 'RD': 'symbol': '4.2-2'}}</td>
+          <td>{{ n.deducciones | currency: 'RD': 'symbol': '4.2-2'}}</td>
+          <td>
+            <i class="material-symbols-outlined text-primary" routerLink="/app-actualizar">edit</i>
+            <i class="material-symbols-outlined text-danger" (click)="delete(o)">delete</i>
+          </td>
+        </tr>-->
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+  <mat-paginator
+    [length]="200"
+    [pageSizeOptions]="[10, 50, 100]"
+    aria-label="Select page"
+  >
+  </mat-paginator>
 </div>

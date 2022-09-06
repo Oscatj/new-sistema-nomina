@@ -1,0 +1,42 @@
+<div class="modalC">
+    <div class="modalC-content">
+      <div class="modalC-header">
+        <div class="modalC-title">
+          <span class="titles2">Nuevo Departamento</span>
+          <i class="material-symbols-outlined">close</i>
+        </div>
+      </div>
+      <div class="modalC-container card">
+        <form class="row">
+            <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej. Sistemas"
+                />
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Descripcion</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="col-4 margen">
+                <label for="validationCustom03" class="form-label">Estado</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elija una opcion</option>
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select>
+              </div>
+        </form>
+        <button
+            class="btn btn-primary"
+            routerLink="/"
+            >GUARDAR
+          </button>
+      </div>
+    </div>
+  </div>
