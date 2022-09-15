@@ -54,3 +54,21 @@
 .contenido{
     margin-top: 10px;
 }
+.form-control {
+    margin-bottom: 15px;
+}
+.btnAdd {
+    background-color: rgb(15, 15, 159);
+    color: white;
+    width: max-content;
+    height: min-content;
+}
+.btnRemove {
+    background-color: rgb(159, 15, 15);
+    margin-left: 2%;
+    color: white;
+    width: max-content;
+    height: max-content;
+    padding-left: 14px;
+    padding-right: 14px;
+}

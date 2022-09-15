@@ -1,126 +1,160 @@
-<button
-  class="btn btn-success d-grid gap-3 mx-auto float-end"
-  routerLink="/personas"
->
-  NUEVO
-</button>
+<div class="card-body">
+  <span class="titles title">HISTORIAL</span>
+</div>
 <div class="principal">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Nomina Regular
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="container mt-2">
-                    <div class="row">
-                      <div class="col-lg-18">
-                        <div>
-                          <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th scope="col">Nombre Empleado</th>
-                                <th scope="col">Departamento</th>
-                                <th scope="col">Funcion</th>
-                                <th scope="col">Sueldo bruto</th>
-                                <th scope="col">ISR</th>
-                                <th scope="col">Seguro Sávica</th>
-                                <th scope="col">Deducción Empleado</th>
-                                <th scope="col">Sueldo Neto</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Oscarina Tejada</td>
-                                <td>Sistema</td>
-                                <td>Desarrollador</td>
-                                <td>RD$ 17,000.00</td>
-                                <td>RD$ 0.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 16,488.00</td>
-                                <td>
-                                  <i class="material-symbols-outlined text-primary">edit</i>
-                                  <i class="material-symbols-outlined text-danger">delete</i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Natan Roman</td>
-                                <td>Contabilidad</td>
-                                <td>Contador</td>
-                                <td>RD$ 58,000.00</td>
-                                <td>RD$ 0.00</td>
-                                <td>RD$ 1,112.00</td>
-                                <td>RD$ 2,041.10</td>
-                                <td>RD$ 55,847.00</td>
-                                <td>
-                                  <i class="material-symbols-outlined text-primary">edit</i>
-                                  <i class="material-symbols-outlined text-danger">delete</i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Andy Tapia</td>
-                                <td>Sistema</td>
-                                <td>Desarrollador</td>
-                                <td>RD$ 17,000.00</td>
-                                <td>RD$ 0.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 16,488.00</td>
-                                <td>
-                                  <i class="material-symbols-outlined text-primary">edit</i>
-                                  <i class="material-symbols-outlined text-danger">delete</i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Ramon Guzman</td>
-                                <td>Sistema</td>
-                                <td>Desarrollador</td>
-                                <td>RD$ 17,000.00</td>
-                                <td>RD$ 0.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 512.00</td>
-                                <td>RD$ 16,488.00</td>
-                                <td>
-                                  <i class="material-symbols-outlined text-primary">edit</i>
-                                  <i class="material-symbols-outlined text-danger">delete</i>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Última nómina paga
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <div class="container mt-2">
+            <div class="row">
+              <div class="col-lg-18">
+                <div>
+                  <div>
+                    <h4>Nomina regular</h4>
+                    <p>Fecha: 05 de julio, 2022</p>
                   </div>
-                
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Nomina de Comision
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Nomina Bonos
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Cod</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Cargo</th>
+                        <th scope="col">Sueldo base</th>
+                        <th scope="col">Deducciones</th>
+                        <th scope="col">Sueldo Neto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>Oscarina</td>
+                        <td>Tejada</td>
+                        <td>Sistema</td>
+                        <td>Desarrollador</td>
+                        <td>RD$ 17,000.00</td>
+                        <td>RD$ 16,488.00</td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <td>02</td>
+                        <td>Antonio</td>
+                        <td>Roman</td>
+                        <td>Contabilidad</td>
+                        <td>Contador</td>
+                        <td>RD$ 17,000.00</td>
+                        <td>RD$ 16,488.00</td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <td>03</td>
+                        <td>Carlos</td>
+                        <td>Fuentes</td>
+                        <td>Sistema</td>
+                        <td>Desarrollador</td>
+                        <td>RD$ 17,000.00</td>
+                        <td>RD$ 16,488.00</td>
+                      </tr>
+                      <tr></tr>
+                      <tr></tr>
+                      <tr>
+                        <td>04</td>
+                        <td>Ana</td>
+                        <td>Martinez</td>
+                        <td>Ventas</td>
+                        <td>Vendedora</td>
+                        <td>RD$ 17,000.00</td>
+                        <td>RD$ 16,488.00</td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          Nomina de Comision
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control the
+          overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or overriding
+          our default variables. It's also worth noting that just about any HTML
+          can go within the <code>.accordion-body</code>, though the transition
+          does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Nomina Bonos
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden
+          by default, until the collapse plugin adds the appropriate classes
+          that we use to style each element. These classes control the overall
+          appearance, as well as the showing and hiding via CSS transitions. You
+          can modify any of this with custom CSS or overriding our default
+          variables. It's also worth noting that just about any HTML can go
+          within the <code>.accordion-body</code>, though the transition does
+          limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

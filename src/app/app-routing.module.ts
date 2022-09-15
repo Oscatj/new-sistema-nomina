@@ -20,9 +20,12 @@ import { BancoModalComponent } from './components/modals/banco-modal/banco-modal
 import { DepartModalComponent } from './components/modals/depart-modal/depart-modal.component';
 import { CargosModalComponent } from './components/modals/cargos-modal/cargos-modal.component';
 import { UsuarioModalComponent } from './components/modals/usuario-modal/usuario-modal.component';
+import { HomeComponent } from './components/home/home.component';
+import { HistoricoComponent } from './components/historico/historico.component';
 
 const routes: Routes = [
-  {path:'index',component: IndexComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'index',component: IndexComponent},
   {path: 'nomina', component: NominaComponent},
   {path: 'listaPersonas', component: ListaPersonasComponent},
   {path: 'usuarios', component: UsuariosComponent},
@@ -42,6 +45,7 @@ const routes: Routes = [
   {path: 'departModal', component: DepartModalComponent},
   {path: 'cargoModal', component: CargosModalComponent},
   {path: 'usuarioModal', component: UsuarioModalComponent},
+  {path: 'historico', component: HistoricoComponent},
   {path:'**',pathMatch:'full',redirectTo:'index'}, 
 ];
 

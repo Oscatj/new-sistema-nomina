@@ -46,6 +46,7 @@ import { BancoModalComponent } from './components/modals/banco-modal/banco-modal
 import { DepartModalComponent } from './components/modals/depart-modal/depart-modal.component';
 import { CargosModalComponent } from './components/modals/cargos-modal/cargos-modal.component';
 import { UsuarioModalComponent } from './components/modals/usuario-modal/usuario-modal.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -76,6 +77,7 @@ import { UsuarioModalComponent } from './components/modals/usuario-modal/usuario
     DepartModalComponent,
     CargosModalComponent,
     UsuarioModalComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

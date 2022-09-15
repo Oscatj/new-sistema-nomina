@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DatosConctacto } from 'src/app/models/DatosContacto';
 
@@ -21,14 +21,29 @@ export class DatosContactoComponent implements OnInit {
 
   estadosRed : string [] = ['Activo', 'Inactivo'];
   defaultEstadoRed : string = 'Elija una opcion';
+  
+  tiposEmail : string [] = ['Personal', 'Laboral', 'Otro'];
+  defaultTipoEmil : string = 'Elija una opcion';
+
+  estadosEmail : string [] = ['Activo', 'Inactivo'];
+  defaultEstadoEmail : string = 'Elija una opcion';
+
+  get correos (){
+    return this.formDatosContacto.get('correos') as FormArray;
+  }
+  get telefonos (){
+    return this.formDatosContacto.get('telefonos') as FormArray;
+  }
+  get redes (){
+    return this.formDatosContacto.get('redes') as FormArray;
+  }
 
   formDatosContacto: FormGroup;
 
   constructor(private fb : FormBuilder,
               private router : Router) {
       this.formDatosContacto = this.fb.group ({
-        emailP : ['', Validators.required],
-        emailE : ['', Validators.required],
+        email : ['', Validators.required],
         calleNo : ['', Validators.required],
         municipio : ['', Validators.required],
         provincia : ['', Validators.required],
@@ -38,8 +53,15 @@ export class DatosContactoComponent implements OnInit {
         estadoTel : ['', Validators.required],
         usuarioRed : ['', Validators.required],
         tipoRed : ['', Validators.required],
-        estadoRed : ['', Validators.required]
+        estadoRed : ['', Validators.required],
+        tipoEmail: ['', Validators.required],
+        estadoEmail: ['', Validators.required],
+        correos: this.fb.array([]),
+        telefonos: this.fb.array([]),
+        redes: this.fb.array([])
       })
+
+  
       this.formDatosContacto.controls['tipoTel'].setValue(this.defaultTipoTel, 
         {onlySelf: true});   
       this.formDatosContacto.controls['estadoTel'].setValue(this.defaultEstadoTel, 
@@ -48,16 +70,55 @@ export class DatosContactoComponent implements OnInit {
         {onlySelf: true});
       this.formDatosContacto.controls['estadoRed'].setValue(this.defaultEstadoRed, 
         {onlySelf: true});   
+      this.formDatosContacto.controls['tipoEmail'].setValue(this.defaultTipoEmil, 
+        {onlySelf: true});
+      this.formDatosContacto.controls['estadoEmail'].setValue(this.defaultEstadoEmail, 
+        {onlySelf: true});      
+      
+      
     }
 
   ngOnInit(): void {
   }
+  agregarCorreo (){
+    const correoFormGroup = this.fb.group({
+      nombre: '',
+      tipo: '',
+      estado: ''
+    })
+    this.correos.push(correoFormGroup);
+  }
+  removerCorreo(indice: number){
+    this.correos.removeAt(indice);
+  }
 
+  agregarTelefono (){
+    const telefonoFormGroup = this.fb.group({
+      nombre: '',
+      tipo: '',
+      estado: ''
+    })
+    this.telefonos.push(telefonoFormGroup);
+  }
+  removerTelefono(indice: number){
+    this.telefonos.removeAt(indice);
+  }
+
+  agregarRed (){
+    const redFormGroup = this.fb.group({
+      nombre: '',
+      tipo: '',
+      estado: ''
+    })
+    this.redes.push(redFormGroup);
+  }
+  removerRed(indice: number){
+    this.redes.removeAt(indice);
+  }
   agregarContacto(){
 
     const contacto : DatosConctacto = {
-      emailP :  this.formDatosContacto.get('emailP')?.value,
-      emailE : this.formDatosContacto.get('emailE')?.value,
+      email :  this.formDatosContacto.get('emailP')?.value,
       calleNo : this.formDatosContacto.get('calleNo')?.value,
       municipio : this.formDatosContacto.get('municipio')?.value,
       provincia : this.formDatosContacto.get('provincia')?.value,
@@ -67,7 +128,10 @@ export class DatosContactoComponent implements OnInit {
       estadoTel : this.formDatosContacto.get('estadoTel')?.value,
       usuarioRed : this.formDatosContacto.get('usuarioRed')?.value,
       tipoRed : this.formDatosContacto.get('tipoRed')?.value,
-      estadoRed : this.formDatosContacto.get('estadoRed')?.value
+      estadoRed : this.formDatosContacto.get('estadoRed')?.value,
+      tipoEmail: this.formDatosContacto.get('tipoEmail')?.value,
+      estadoEmail: this.formDatosContacto.get('estadoEmail')?.value
+
     }
     console.log(contacto);
     this.router.navigate(['/app-datos-laborales']);

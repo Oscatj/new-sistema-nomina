@@ -1,0 +1,12 @@
+<body>
+    <app-navbar></app-navbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sideNav mode="side" opened>
+      <app-panel></app-panel>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container> 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+</body>

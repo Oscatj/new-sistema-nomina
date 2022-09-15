@@ -1,7 +1,6 @@
 export class DatosConctacto {
     _id? : number;
-    emailP : string;
-    emailE : string;
+    email : string;
     calleNo : string;
     municipio : string;
     provincia : string;
@@ -12,11 +11,12 @@ export class DatosConctacto {
     usuarioRed : string;
     tipoRed : string;
     estadoRed : string;
+    tipoEmail: string;
+    estadoEmail: string;
     
-    constructor (emailP : string, emailE : string, calleNo : string, municipio : string, provincia : string, referencia : string, noTel : number, tipoTel :string, estadoTel : string, usuarioRed: string, tipoRed : string, estadoRed : string){
+    constructor (email : string, calleNo : string, municipio : string, provincia : string, referencia : string, noTel : number, tipoTel :string, estadoTel : string, usuarioRed: string, tipoRed : string, estadoRed : string, tipoEmail: string, estadoEmail: string){
     
-        this.emailP = emailP;
-        this.emailE = emailE;
+        this.email = email;
         this.calleNo = calleNo;
         this.municipio = municipio;
         this.provincia = provincia;
@@ -27,5 +27,7 @@ export class DatosConctacto {
         this.usuarioRed = usuarioRed;
         this.tipoRed = tipoRed;
         this.estadoRed = estadoRed;
+        this.tipoEmail = tipoEmail;
+        this.estadoEmail = estadoEmail;
     }
 }
